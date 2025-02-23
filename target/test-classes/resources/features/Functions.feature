@@ -24,7 +24,7 @@ Scenario: JS Functions
           let petNames = {}        
 
           arr.forEach(name => {
-            let petName = name
+            let petName = name.petName
 
             if (petNames[petName]) petNames[petName] ++
             else petNames[petName] = 1

@@ -17,12 +17,13 @@ function fun (){
             let petNames = {}        
   
             arr.forEach(name => {
-              let petName = name
-  
+              let petName = name.petName
+              console.log(petNames[petName])
               if (petNames[petName]) petNames[petName] ++
               else petNames[petName] = 1
+              console.log(petNames)
             });
-  
+            
             return petNames
     }
 }
