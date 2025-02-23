@@ -1,7 +1,7 @@
 Feature:
 
   Background:
-    * url 'https://petstore.swagger.io'
+    Given url swaggerUrl
     * def jsFunFeature = call read('classpath:resources/features/Functions.feature')
     * def jsFunClass = call read('classpath:resources/js/functions.js')
 

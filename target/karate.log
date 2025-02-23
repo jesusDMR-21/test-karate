@@ -1,7 +1,7 @@
-20:06:44.086 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
-20:06:44.811 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
-20:06:44.811 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
-20:06:44.934 [pool-1-thread-1] INFO  com.intuit.karate - [print] {
+20:12:57.016 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:12:57.798 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+20:12:57.798 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+20:12:57.922 [pool-1-thread-1] INFO  com.intuit.karate - [print] {
   "id": 4,
   "username": "JD24",
   "firstName": "Jesús",
@@ -12,7 +12,7 @@
   "userStatus": 0
 }
  
-20:06:45.398 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+20:12:58.404 [pool-1-thread-2] DEBUG com.intuit.karate - request:
 1 > GET https://petstore.swagger.io/v2/pet/findByStatus?status=sold
 1 > Host: petstore.swagger.io
 1 > Connection: Keep-Alive
@@ -20,7 +20,7 @@
 1 > Accept-Encoding: gzip,deflate
 
 
-20:06:45.399 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+20:12:58.404 [pool-1-thread-1] DEBUG com.intuit.karate - request:
 1 > POST https://petstore.swagger.io/v2/user
 1 > Content-Type: application/json; charset=UTF-8
 1 > Content-Length: 147
@@ -30,9 +30,9 @@
 1 > Accept-Encoding: gzip,deflate
 {"id":4,"username":"JD24","firstName":"Jesús","lastName":"Muñoz","email":"mai@mail.com","password":"pass1234","phone":"123456789","userStatus":0}
 
-20:06:45.961 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 562
+20:12:58.919 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 508
 1 < 200
-1 < Date: Sun, 23 Feb 2025 19:06:40 GMT
+1 < Date: Sun, 23 Feb 2025 19:12:53 GMT
 1 < Content-Type: application/json
 1 < Transfer-Encoding: chunked
 1 < Connection: keep-alive
@@ -40,33 +40,8 @@
 1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 < Server: Jetty(9.2.9.v20150224)
-{"code":200,"type":"unknown","message":"4"}
-20:06:45.965 [pool-1-thread-1] INFO  com.intuit.karate - [print] {
-  "code": 200,
-  "type": "unknown",
-  "message": "4"
-}
- 
-20:06:45.969 [pool-1-thread-1] DEBUG com.intuit.karate - request:
-2 > GET https://petstore.swagger.io/v2/user/JD24
-2 > Host: petstore.swagger.io
-2 > Connection: Keep-Alive
-2 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
-2 > Accept-Encoding: gzip,deflate
-
-
-20:06:45.979 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 580
-1 < 200
-1 < Date: Sun, 23 Feb 2025 19:06:40 GMT
-1 < Content-Type: application/json
-1 < Transfer-Encoding: chunked
-1 < Connection: keep-alive
-1 < Access-Control-Allow-Origin: *
-1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
-1 < Server: Jetty(9.2.9.v20150224)
-[{"id":994,"category":{"id":53,"name":"dog"},"name":"Patsy","photoUrls":["https://images.squarespace-cdn.com/content/v1/54822a56e4b0b30bd821480c/29708160-9b39-42d0-a5ed-4f8b9c85a267/labrador+retriever+dans+pet+care.jpeg?format=1500w"],"tags":[{"id":631,"name":"friendly"}],"status":"sold"},{"id":447,"category":{"id":206,"name":"dog"},"name":"Lottie","photoUrls":["https://images.squarespace-cdn.com/content/v1/54822a56e4b0b30bd821480c/29708160-9b39-42d0-a5ed-4f8b9c85a267/labrador+retriever+dans+pet+care.jpeg?format=1500w"],"tags":[{"id":328,"name":"friendly"}],"status":"sold"},{"id":635,"category":{"id":746,"name":"dog"},"name":"Braxton","photoUrls":["https://images.squarespace-cdn.com/content/v1/54822a56e4b0b30bd821480c/29708160-9b39-42d0-a5ed-4f8b9c85a267/labrador+retriever+dans+pet+care.jpeg?format=1500w"],"tags":[{"id":611,"name":"friendly"}],"status":"sold"},{"id":375,"category":{"id":796,"name":"dog"},"name":"Emmalee","photoUrls":["https://images.squarespace-cdn.com/content/v1/54822a56e4b0b30bd821480c/29708160-9b39-42d0-a5ed-4f8b9c85a267/labrador+retriever+dans+pet+care.jpeg?format=1500w"],"tags":[{"id":309,"name":"friendly"}],"status":"sold"},{"id":9223372036854759025,"category":{"id":1,"name":"Dogs"},"name":"Updated Doggie","photoUrls":["https://example.com/updated_dog.jpg"],"tags":[{"id":1,"name":"friendly"}],"status":"sold"},{"id":56331470,"category":{"id":28262311,"name":"nostrud proident"},"name":"doggie","photoUrls":["sunt dolor veniam aliqua","nulla anim ex"],"tags":[{"id":21515670,"name":"voluptate in elit ani"},{"id":-36858804,"name":"proident non deserunt"}],"status":"sold"},{"id":9223372036854759086,"category":{"id":-39782949,"name":"consectetur in dolor"},"name":"doggie","photoUrls":["nostrud Excepteur","in reprehenderit magna"],"tags":[{"id":63823124,"name":"adipisicing dolor"},{"id":87743804,"name":"commodo non enim officia ipsum"}],"status":"sold"},{"id":9223372036854759088,"category":{"id":42892111,"name":"dolore laboris exercitation enim"},"name":"doggie","photoUrls":["enim do amet et","in incididunt nulla"],"tags":[{"id":13217034,"name":"Duis in"},{"id":-1050560,"name":"occaecat nulla et Duis"}],"status":"sold"},{"id":9223372036854759089,"category":{"id":-19816953,"name":"officia"},"name":"doggie","photoUrls":["aute do","aliquip"],"tags":[{"id":-7497000,"name":"velit dolore deserunt nostrud"},{"id":61724686,"name":"consequat voluptate pariatur adipisicing aliquip"}],"status":"sold"},{"id":9223372036854759094,"category":{"id":1,"name":"Dogs"},"name":"Updated Doggie","photoUrls":["https://example.com/updated_dog.jpg"],"tags":[{"id":1,"name":"friendly"}],"status":"sold"},{"id":9223372036854759147,"category":{"id":48345351,"name":"dolore quis"},"name":"doggie","photoUrls":["deseru","nisi aute do incididunt"],"tags":[{"id":72677302,"name":"in incididunt dolore occaecat"},{"id":-38449077,"name":"adipisicing"}],"status":"sold"},{"id":23,"category":{"id":224,"name":"dog"},"name":"Aletha","photoUrls":["https://beverly.net"],"tags":[{"id":161,"name":"friendly"}],"status":"sold"},{"id":173,"category":{"id":123,"name":"dog"},"name":"Dewitt","photoUrls":["https://ezekiel.name"],"tags":[{"id":797,"name":"friendly"}],"status":"sold"},{"id":9223372036854759543,"category":{"id":13901210,"name":"Lorem"},"name":"doggie","photoUrls":["irure","amet mollit"],"tags":[{"id":62083722,"name":"proident magna consequat"},{"id":83179165,"name":"commodo sint"}],"status":"sold"},{"id":3708840,"category":{"id":9855812,"name":"Duis in commodo"},"name":"doggie","photoUrls":["minim id in sit","est esse culpa nisi"],"tags":[{"id":-89808508,"name":"sit"},{"id":-5238278,"name":"dolor in"}],"status":"sold"},{"id":24093935,"category":{"id":-6714225,"name":"do magna"},"name":"doggie","photoUrls":["aute","velit"],"tags":[{"id":71561130,"name":"deserunt ut occaecat"},{"id":-1195842,"name":"nulla nostrud occaeca"}],"status":"sold"},{"id":9223372036854760005,"category":{"id":-52311390,"name":"enim tempor labore sit amet"},"name":"doggie","photoUrls":["magna officia aute","cillum labore qui"],"tags":[{"id":-40013794,"name":"in irure sit Duis"},{"id":-72219424,"name":"labore aliquip aliqua"}],"status":"sold"},{"id":91507602,"category":{"id":-95494262,"name":"sit ea"},"name":"doggie","photoUrls":["deserunt","id sint et"],"tags":[{"id":-54029842,"name":"ullamco"},{"id":13198949,"name":"id"}],"status":"sold"},{"id":13,"category":{"id":0,"name":"cats"},"photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"},{"id":3903023,"category":{"id":-56789506,"name":"cillum p"},"name":"doggie","photoUrls":["aliquip Excepteur","commodo dolore consequat eu"],"tags":[{"id":60937326,"name":"irure in"},{"id":20218536,"name":"sint consectetur ad voluptate"}],"status":"sold"},{"id":998,"category":{"id":5,"name":"cat"},"name":"Murzik","photoUrls":["https://ru.freepik.com/photos/%D0%BA%D0%BE%D1%88%D0%BA%D0%B8"],"tags":[{"id":1,"name":"sweet"}],"status":"sold"}]
-20:06:45.981 [pool-1-thread-2] INFO  com.intuit.karate - [print] [
+[{"id":994,"category":{"id":53,"name":"dog"},"name":"Patsy","photoUrls":["https://images.squarespace-cdn.com/content/v1/54822a56e4b0b30bd821480c/29708160-9b39-42d0-a5ed-4f8b9c85a267/labrador+retriever+dans+pet+care.jpeg?format=1500w"],"tags":[{"id":631,"name":"friendly"}],"status":"sold"},{"id":447,"category":{"id":206,"name":"dog"},"name":"Lottie","photoUrls":["https://images.squarespace-cdn.com/content/v1/54822a56e4b0b30bd821480c/29708160-9b39-42d0-a5ed-4f8b9c85a267/labrador+retriever+dans+pet+care.jpeg?format=1500w"],"tags":[{"id":328,"name":"friendly"}],"status":"sold"},{"id":635,"category":{"id":746,"name":"dog"},"name":"Braxton","photoUrls":["https://images.squarespace-cdn.com/content/v1/54822a56e4b0b30bd821480c/29708160-9b39-42d0-a5ed-4f8b9c85a267/labrador+retriever+dans+pet+care.jpeg?format=1500w"],"tags":[{"id":611,"name":"friendly"}],"status":"sold"},{"id":375,"category":{"id":796,"name":"dog"},"name":"Emmalee","photoUrls":["https://images.squarespace-cdn.com/content/v1/54822a56e4b0b30bd821480c/29708160-9b39-42d0-a5ed-4f8b9c85a267/labrador+retriever+dans+pet+care.jpeg?format=1500w"],"tags":[{"id":309,"name":"friendly"}],"status":"sold"},{"id":9223372036854759025,"category":{"id":1,"name":"Dogs"},"name":"Updated Doggie","photoUrls":["https://example.com/updated_dog.jpg"],"tags":[{"id":1,"name":"friendly"}],"status":"sold"},{"id":56331470,"category":{"id":28262311,"name":"nostrud proident"},"name":"doggie","photoUrls":["sunt dolor veniam aliqua","nulla anim ex"],"tags":[{"id":21515670,"name":"voluptate in elit ani"},{"id":-36858804,"name":"proident non deserunt"}],"status":"sold"},{"id":9223372036854759086,"category":{"id":-39782949,"name":"consectetur in dolor"},"name":"doggie","photoUrls":["nostrud Excepteur","in reprehenderit magna"],"tags":[{"id":63823124,"name":"adipisicing dolor"},{"id":87743804,"name":"commodo non enim officia ipsum"}],"status":"sold"},{"id":9223372036854759088,"category":{"id":42892111,"name":"dolore laboris exercitation enim"},"name":"doggie","photoUrls":["enim do amet et","in incididunt nulla"],"tags":[{"id":13217034,"name":"Duis in"},{"id":-1050560,"name":"occaecat nulla et Duis"}],"status":"sold"},{"id":9223372036854759089,"category":{"id":-19816953,"name":"officia"},"name":"doggie","photoUrls":["aute do","aliquip"],"tags":[{"id":-7497000,"name":"velit dolore deserunt nostrud"},{"id":61724686,"name":"consequat voluptate pariatur adipisicing aliquip"}],"status":"sold"},{"id":9223372036854759094,"category":{"id":1,"name":"Dogs"},"name":"Updated Doggie","photoUrls":["https://example.com/updated_dog.jpg"],"tags":[{"id":1,"name":"friendly"}],"status":"sold"},{"id":9223372036854759147,"category":{"id":48345351,"name":"dolore quis"},"name":"doggie","photoUrls":["deseru","nisi aute do incididunt"],"tags":[{"id":72677302,"name":"in incididunt dolore occaecat"},{"id":-38449077,"name":"adipisicing"}],"status":"sold"},{"id":23,"category":{"id":224,"name":"dog"},"name":"Aletha","photoUrls":["https://beverly.net"],"tags":[{"id":161,"name":"friendly"}],"status":"sold"},{"id":173,"category":{"id":123,"name":"dog"},"name":"Dewitt","photoUrls":["https://ezekiel.name"],"tags":[{"id":797,"name":"friendly"}],"status":"sold"},{"id":9223372036854759543,"category":{"id":13901210,"name":"Lorem"},"name":"doggie","photoUrls":["irure","amet mollit"],"tags":[{"id":62083722,"name":"proident magna consequat"},{"id":83179165,"name":"commodo sint"}],"status":"sold"},{"id":3708840,"category":{"id":9855812,"name":"Duis in commodo"},"name":"doggie","photoUrls":["minim id in sit","est esse culpa nisi"],"tags":[{"id":-89808508,"name":"sit"},{"id":-5238278,"name":"dolor in"}],"status":"sold"},{"id":24093935,"category":{"id":-6714225,"name":"do magna"},"name":"doggie","photoUrls":["aute","velit"],"tags":[{"id":71561130,"name":"deserunt ut occaecat"},{"id":-1195842,"name":"nulla nostrud occaeca"}],"status":"sold"},{"id":9223372036854760005,"category":{"id":-52311390,"name":"enim tempor labore sit amet"},"name":"doggie","photoUrls":["magna officia aute","cillum labore qui"],"tags":[{"id":-40013794,"name":"in irure sit Duis"},{"id":-72219424,"name":"labore aliquip aliqua"}],"status":"sold"},{"id":91507602,"category":{"id":-95494262,"name":"sit ea"},"name":"doggie","photoUrls":["deserunt","id sint et"],"tags":[{"id":-54029842,"name":"ullamco"},{"id":13198949,"name":"id"}],"status":"sold"},{"id":13,"category":{"id":0,"name":"cats"},"photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"},{"id":3903023,"category":{"id":-56789506,"name":"cillum p"},"name":"doggie","photoUrls":["aliquip Excepteur","commodo dolore consequat eu"],"tags":[{"id":60937326,"name":"irure in"},{"id":20218536,"name":"sint consectetur ad voluptate"}],"status":"sold"},{"id":998,"category":{"id":5,"name":"cat"},"name":"Murzik","photoUrls":["https://ru.freepik.com/photos/%D0%BA%D0%BE%D1%88%D0%BA%D0%B8"],"tags":[{"id":1,"name":"sweet"}],"status":"sold"},{"id":9,"category":{"id":0,"name":"cats"},"name":"King Kong","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"}]
+20:12:58.922 [pool-1-thread-2] INFO  com.intuit.karate - [print] [
   {
     "id": 994,
     "category": {
@@ -498,10 +473,53 @@
       }
     ],
     "status": "sold"
+  },
+  {
+    "id": 9,
+    "category": {
+      "id": 0,
+      "name": "cats"
+    },
+    "name": "King Kong",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "sold"
   }
 ]
  
-20:06:46.023 [pool-1-thread-2] INFO  com.intuit.karate - [print] [
+20:12:58.947 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 537
+1 < 200
+1 < Date: Sun, 23 Feb 2025 19:12:53 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"code":200,"type":"unknown","message":"4"}
+20:12:58.949 [pool-1-thread-1] INFO  com.intuit.karate - [print] {
+  "code": 200,
+  "type": "unknown",
+  "message": "4"
+}
+ 
+20:12:58.954 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+2 > GET https://petstore.swagger.io/v2/user/JD24
+2 > Host: petstore.swagger.io
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+2 > Accept-Encoding: gzip,deflate
+
+
+20:12:58.965 [pool-1-thread-2] INFO  com.intuit.karate - [print] [
   {
     "petId": 994,
     "petName": "Patsy"
@@ -585,10 +603,14 @@
   {
     "petId": 998,
     "petName": "Murzik"
+  },
+  {
+    "petId": 9,
+    "petName": "King Kong"
   }
 ]
  
-20:06:46.031 [pool-1-thread-2] INFO  com.intuit.karate - [print] {
+20:12:58.974 [pool-1-thread-2] INFO  com.intuit.karate - [print] {
   "Patsy": 1,
   "Lottie": 1,
   "Braxton": 1,
@@ -598,10 +620,11 @@
   "Aletha": 1,
   "Dewitt": 1,
   "null": 1,
-  "Murzik": 1
+  "Murzik": 1,
+  "King Kong": 1
 }
  
-20:06:46.039 [pool-1-thread-2] INFO  com.intuit.karate - [print] [
+20:12:58.982 [pool-1-thread-2] INFO  com.intuit.karate - [print] [
   {
     "petId": 994,
     "petName": "Patsy"
@@ -685,10 +708,14 @@
   {
     "petId": 998,
     "petName": "Murzik"
+  },
+  {
+    "petId": 9,
+    "petName": "King Kong"
   }
 ]
  
-20:06:46.058 [pool-1-thread-2] INFO  com.intuit.karate - [print] {
+20:12:59.002 [pool-1-thread-2] INFO  com.intuit.karate - [print] {
   "Patsy": 1,
   "Lottie": 1,
   "Braxton": 1,
@@ -698,12 +725,13 @@
   "Aletha": 1,
   "Dewitt": 1,
   "null": 1,
-  "Murzik": 1
+  "Murzik": 1,
+  "King Kong": 1
 }
  
-20:06:46.311 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 342
+20:12:59.317 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 363
 2 < 200
-2 < Date: Sun, 23 Feb 2025 19:06:40 GMT
+2 < Date: Sun, 23 Feb 2025 19:12:53 GMT
 2 < Content-Type: application/json
 2 < Transfer-Encoding: chunked
 2 < Connection: keep-alive
@@ -712,7 +740,7 @@
 2 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 2 < Server: Jetty(9.2.9.v20150224)
 {"id":4,"username":"JD24","firstName":"Jesús","lastName":"Muñoz","email":"mai@mail.com","password":"pass1234","phone":"123456789","userStatus":0}
-20:06:46.313 [pool-1-thread-1] INFO  com.intuit.karate - [print] {
+20:12:59.319 [pool-1-thread-1] INFO  com.intuit.karate - [print] {
   "id": 4,
   "username": "JD24",
   "firstName": "Jesús",
@@ -723,4 +751,4 @@
   "userStatus": 0
 }
  
-20:06:46.913 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:apisTest/feature/Test.feature
+20:12:59.990 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:apisTest/feature/Test.feature
