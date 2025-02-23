@@ -1,0 +1,1901 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>apisTest.feature.Test</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2025-02-20 10:27:01 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:9]"><span>[1:9]</span> <span>Create and get user</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:28]"><span>[2:28]</span> <span>Find by status and count names</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">apisTest/feature/Test.feature</span><span class="feature-label">|</span>
+          <span class="feature-name"></span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:9]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">CreateUser</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:9]</span>
+                <span class="scenario-name">Create and get user</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1357</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:9]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:9]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://petstore.swagger.io&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">22:26:59.741 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:9]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def jsFunFeature = call read(&#39;classpath:resources/features/Functions.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">36</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.5.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">resources.features.Functions</div>
+      </div>
+      <div class="time-cell passed">12</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def modifiedResponse =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.5.0.call.0.5">function(rs){
+    let arr = []
+    rs.forEach(element =&gt; {
+      let obj = {}
+      obj.petId = element.id
+      obj.petName = element.name
+      arr.push(obj)
+    });
+          
+    return arr
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.21">
+      <div class="step-ref bg-step">21</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def nameRepetitions  =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.5.0.call.0.21">function contarRepeticiones(arr) {
+    let petNames = {}        
+    arr.forEach(name =&gt; {
+      let petName = name
+      if (petNames[petName]) petNames[petName] ++
+      else petNames[petName] = 1
+    });
+    return petNames
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[1:9]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def jsFunClass = call read(&#39;classpath:resources/js/functions.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>table variables</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+  <table>
+    <tr class="tr">      
+      <td class="td">id</td>      
+      <td class="td">userName</td>      
+      <td class="td">firstName</td>      
+      <td class="td">lastName</td>      
+      <td class="td">email</td>      
+      <td class="td">pass</td>      
+      <td class="td">phone</td>      
+      <td class="td">userStatus</td>
+    </tr>
+    <tr class="tr">      
+      <td class="td">4</td>      
+      <td class="td">&#39;JD24&#39;</td>      
+      <td class="td">&#39;Jesús&#39;</td>      
+      <td class="td">&#39;Muñoz&#39;</td>      
+      <td class="td">&#39;mai@mail.com&#39;</td>      
+      <td class="td">&#39;pass1234&#39;</td>      
+      <td class="td">&#39;123456789&#39;</td>      
+      <td class="td">0</td>
+    </tr>     
+  </table> 
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def rqst = read(&#39;classpath:resources/json/createAccount.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">44</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print rqst</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.14">22:26:59.867 [print] {
+  &quot;id&quot;: 4,
+  &quot;username&quot;: &quot;JD24&quot;,
+  &quot;firstName&quot;: &quot;Jesús&quot;,
+  &quot;lastName&quot;: &quot;Muñoz&quot;,
+  &quot;email&quot;: &quot;mai@mail.com&quot;,
+  &quot;password&quot;: &quot;pass1234&quot;,
+  &quot;phone&quot;: &quot;123456789&quot;,
+  &quot;userStatus&quot;: 0
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">##Creating user</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;v2&#39;, &#39;user&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request rqst</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">933</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.18">22:27:00.302 request:
+1 &gt; POST https://petstore.swagger.io/v2/user
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 147
+1 &gt; Host: petstore.swagger.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;id&quot;:4,&quot;username&quot;:&quot;JD24&quot;,&quot;firstName&quot;:&quot;Jesús&quot;,&quot;lastName&quot;:&quot;Muñoz&quot;,&quot;email&quot;:&quot;mai@mail.com&quot;,&quot;password&quot;:&quot;pass1234&quot;,&quot;phone&quot;:&quot;123456789&quot;,&quot;userStatus&quot;:0}
+
+22:27:00.800 response time in milliseconds: 496
+1 &lt; 200
+1 &lt; Date: Thu, 20 Feb 2025 21:27:00 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Server: Jetty(9.2.9.v20150224)
+{&quot;code&quot;:200,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;4&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.20">22:27:00.802 [print] {
+  &quot;code&quot;: 200,
+  &quot;type&quot;: &quot;unknown&quot;,
+  &quot;message&quot;: &quot;4&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">##Getting created user</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;v2&#39;, &#39;user&#39;, variables[0].userName</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">321</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.23">22:27:00.807 request:
+2 &gt; GET https://petstore.swagger.io/v2/user/JD24
+2 &gt; Host: petstore.swagger.io
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+22:27:01.127 response time in milliseconds: 319
+2 &lt; 200
+2 &lt; Date: Thu, 20 Feb 2025 21:27:00 GMT
+2 &lt; Content-Type: application/json
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Connection: keep-alive
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+2 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+2 &lt; Server: Jetty(9.2.9.v20150224)
+{&quot;id&quot;:4,&quot;username&quot;:&quot;JD24&quot;,&quot;firstName&quot;:&quot;Jesús&quot;,&quot;lastName&quot;:&quot;Muñoz&quot;,&quot;email&quot;:&quot;mai@mail.com&quot;,&quot;password&quot;:&quot;pass1234&quot;,&quot;phone&quot;:&quot;123456789&quot;,&quot;userStatus&quot;:0}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.24">22:27:01.128 [print] {
+  &quot;id&quot;: 4,
+  &quot;username&quot;: &quot;JD24&quot;,
+  &quot;firstName&quot;: &quot;Jesús&quot;,
+  &quot;lastName&quot;: &quot;Muñoz&quot;,
+  &quot;email&quot;: &quot;mai@mail.com&quot;,
+  &quot;password&quot;: &quot;pass1234&quot;,
+  &quot;phone&quot;: &quot;123456789&quot;,
+  &quot;userStatus&quot;: 0
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>assert response.username == variables[0].userName</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:28]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">FindByStatus</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:28]</span>
+                <span class="scenario-name">Find by status and count names</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1256</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:28]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:28]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://petstore.swagger.io&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">22:26:59.741 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:28]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def jsFunFeature = call read(&#39;classpath:resources/features/Functions.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">36</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.5.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">resources.features.Functions</div>
+      </div>
+      <div class="time-cell passed">12</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def modifiedResponse =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.5.0.call.0.5">function(rs){
+    let arr = []
+    rs.forEach(element =&gt; {
+      let obj = {}
+      obj.petId = element.id
+      obj.petName = element.name
+      arr.push(obj)
+    });
+          
+    return arr
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.21">
+      <div class="step-ref bg-step">21</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def nameRepetitions  =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.5.0.call.0.21">function contarRepeticiones(arr) {
+    let petNames = {}        
+    arr.forEach(name =&gt; {
+      let petName = name
+      if (petNames[petName]) petNames[petName] ++
+      else petNames[petName] = 1
+    });
+    return petNames
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[2:28]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def jsFunClass = call read(&#39;classpath:resources/js/functions.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;v2&#39;, &#39;pet&#39;, &#39;findByStatus&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param status = &#39;sold&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1105</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.31">22:27:00.302 request:
+1 &gt; GET https://petstore.swagger.io/v2/pet/findByStatus?status=sold
+1 &gt; Host: petstore.swagger.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+22:27:00.922 response time in milliseconds: 620
+1 &lt; 200
+1 &lt; Date: Thu, 20 Feb 2025 21:27:00 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Server: Jetty(9.2.9.v20150224)
+[{&quot;id&quot;:118,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;dxs&quot;},&quot;name&quot;:&quot;rnn&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;7yt&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:109,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;8j1&quot;},&quot;name&quot;:&quot;imr&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;1ao&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:127,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;rkb&quot;},&quot;name&quot;:&quot;8bq&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;4ha&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:7574746,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Cat&quot;},&quot;name&quot;:&quot;Hardy&quot;,&quot;photoUrls&quot;:[&quot;https://i.pinimg.com/originals/5c/2c/44/5c2c44f16da1caf134c00bc4f9c72ea0.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:7805,&quot;name&quot;:&quot;Mainecoon&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:3146,&quot;name&quot;:&quot;Gigi791&quot;,&quot;photoUrls&quot;:[],&quot;tags&quot;:[],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:4187,&quot;name&quot;:&quot;Gigi620&quot;,&quot;photoUrls&quot;:[],&quot;tags&quot;:[],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:108,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;4k7&quot;},&quot;name&quot;:&quot;b96&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;uye&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:9223372016900063838,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;Cats&quot;},&quot;name&quot;:&quot;Luna&quot;,&quot;photoUrls&quot;:[&quot;https://th.bing.com/th/id/OIP.V32oJaaJyc-aCo4x-mtuVgHaFS?rs=1&amp;pid=ImgDetMain&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;scottish&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:50907655,&quot;category&quot;:{&quot;id&quot;:10,&quot;name&quot;:&quot;category33&quot;},&quot;name&quot;:&quot;catmy&quot;,&quot;photoUrls&quot;:[&quot;https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_67af46be36a76d12eaa57900_67af46bf36a76d12eaa58105/scale_1200&quot;],&quot;tags&quot;:[{&quot;id&quot;:95,&quot;name&quot;:&quot;Viktorka&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:136,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;ofo&quot;},&quot;name&quot;:&quot;gb4&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;8q0&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:153,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;ixn&quot;},&quot;name&quot;:&quot;2ac&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;ugw&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:172,&quot;category&quot;:{&quot;id&quot;:14,&quot;name&quot;:&quot;parent&quot;},&quot;name&quot;:&quot;Joshua Weaver&quot;,&quot;photoUrls&quot;:[&quot;https://placekitten.com/546/862&quot;],&quot;tags&quot;:[{&quot;id&quot;:40,&quot;name&quot;:&quot;morning&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:148,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;vws&quot;},&quot;name&quot;:&quot;t6o&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;zs7&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:175,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;jsc&quot;},&quot;name&quot;:&quot;2zf&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;rkj&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:185,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;bnb&quot;},&quot;name&quot;:&quot;e6f&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;v21&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:120,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;7ok&quot;},&quot;name&quot;:&quot;hyz&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;6hd&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:166,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;cxa&quot;},&quot;name&quot;:&quot;ewm&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;56z&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:176,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;kak&quot;},&quot;name&quot;:&quot;9m4&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;tfv&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:191,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;catMiy&quot;},&quot;name&quot;:&quot;cats 5m75h30iz08&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;Marsi&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:149,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;7w8&quot;},&quot;name&quot;:&quot;ytg&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;ooo&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:189,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;9ab&quot;},&quot;name&quot;:&quot;nvv&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;pg5&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:198,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;category uo68v2npxg&quot;},&quot;name&quot;:&quot;cats k6043j4tvnl&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;tag 7bh078rg2bg&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:114,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;fdm&quot;},&quot;name&quot;:&quot;kfj&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;9bj&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:168,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;category b604jnkjhqa&quot;},&quot;name&quot;:&quot;cats zojd46460m&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;tag cyh3n9u36r&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:692,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;dog&quot;},&quot;name&quot;:&quot;Alessia&quot;,&quot;photoUrls&quot;:[&quot;https://cdn.britannica.com/41/233841-050-4FFECCF1/Pomeranian-dog.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;pomeranian&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:627,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;dog&quot;},&quot;name&quot;:&quot;Jose&quot;,&quot;photoUrls&quot;:[&quot;https://cdn.britannica.com/41/233841-050-4FFECCF1/Pomeranian-dog.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;pomeranian&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:13,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;cats&quot;},&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:751,&quot;name&quot;:&quot;Diana Benson&quot;,&quot;photoUrls&quot;:[&quot;https://dummyimage.com/16x157&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:216,&quot;name&quot;:&quot;Theresa Ford&quot;,&quot;photoUrls&quot;:[&quot;https://placekitten.com/516/840&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:303,&quot;category&quot;:{&quot;id&quot;:3030,&quot;name&quot;:&quot;cat&quot;},&quot;name&quot;:&quot;Busya&quot;,&quot;photoUrls&quot;:[&quot;&lt;string&gt;&quot;,&quot;&lt;string&gt;&quot;,&quot;&lt;string&gt;&quot;],&quot;tags&quot;:[{&quot;id&quot;:202,&quot;name&quot;:&quot;funny&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:16,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;boy&quot;},&quot;name&quot;:&quot;Tom&quot;,&quot;photoUrls&quot;:[&quot;https://upload.wikimedia.org/wikipedia/commons/0/0c/Deutscher_Sch%C3%A4ferhund-_portrait.JPG&quot;],&quot;tags&quot;:[{&quot;id&quot;:16,&quot;name&quot;:&quot;nemeckaya ovcharka&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:641,&quot;category&quot;:{&quot;id&quot;:74,&quot;name&quot;:&quot;research&quot;},&quot;name&quot;:&quot;Jason Jordan&quot;,&quot;photoUrls&quot;:[&quot;https://placekitten.com/217/149&quot;],&quot;tags&quot;:[{&quot;id&quot;:36,&quot;name&quot;:&quot;candidate&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:6176,&quot;category&quot;:{&quot;id&quot;:1121,&quot;name&quot;:&quot;yxWmLwlNVZ&quot;},&quot;name&quot;:&quot;Nmjhhs1nuq&quot;,&quot;photoUrls&quot;:[&quot;H3LNcChtA6&quot;,&quot;47YVXqMXQa&quot;,&quot;XKlFvtxn1n&quot;,&quot;Na73N446lG&quot;,&quot;HOMU1kJ5A4&quot;],&quot;tags&quot;:[{&quot;id&quot;:6719,&quot;name&quot;:&quot;urcHLcEf99&quot;},{&quot;id&quot;:6466,&quot;name&quot;:&quot;ZrL2qqnAdN&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:31,&quot;category&quot;:{&quot;id&quot;:69,&quot;name&quot;:&quot;fight&quot;},&quot;name&quot;:&quot;Zachary Hill&quot;,&quot;photoUrls&quot;:[&quot;https://placekitten.com/810/852&quot;],&quot;tags&quot;:[{&quot;id&quot;:78,&quot;name&quot;:&quot;more&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:254,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;category c076irokfq&quot;},&quot;name&quot;:&quot;cats oiwr8hqnwpn&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;tag io33i9d0vtl&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:239,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;category rma9i5yj1z&quot;},&quot;name&quot;:&quot;cats 9sfdggw3cop&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;tag bjkkm95pgyd&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:32323242323,&quot;name&quot;:&quot;cshaplin&quot;,&quot;photoUrls&quot;:[],&quot;tags&quot;:[],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:56834567,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;Мурзик&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:55325269,&quot;category&quot;:{&quot;id&quot;:86859456,&quot;name&quot;:&quot;aliqua consectetur tempor occaecat id&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;do Lorem reprehenderit&quot;,&quot;Duis et mollit voluptate&quot;],&quot;tags&quot;:[{&quot;id&quot;:78709229,&quot;name&quot;:&quot;cupidatat in cillum ullamco tempor&quot;},{&quot;id&quot;:-92349321,&quot;name&quot;:&quot;enim cupidatat ad v&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:666,&quot;name&quot;:&quot;CyberDemon&quot;,&quot;photoUrls&quot;:[],&quot;tags&quot;:[],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:443,&quot;category&quot;:{&quot;id&quot;:38,&quot;name&quot;:&quot;many&quot;},&quot;name&quot;:&quot;Bryan Curry&quot;,&quot;photoUrls&quot;:[&quot;https://picsum.photos/676/970&quot;],&quot;tags&quot;:[{&quot;id&quot;:94,&quot;name&quot;:&quot;of&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:967,&quot;category&quot;:{&quot;id&quot;:193,&quot;name&quot;:&quot;uptbox&quot;},&quot;name&quot;:&quot;uptDaniel Thomas&quot;,&quot;tags&quot;:[{&quot;id&quot;:196,&quot;name&quot;:&quot;uptpower&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:483,&quot;category&quot;:{&quot;id&quot;:137,&quot;name&quot;:&quot;uptcheck&quot;},&quot;name&quot;:&quot;uptNicole Morgan&quot;,&quot;photoUrls&quot;:[&quot;https://picsum.photos/980/692/upt&quot;],&quot;tags&quot;:[{&quot;id&quot;:159,&quot;name&quot;:&quot;uptnot&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:2205,&quot;category&quot;:{&quot;id&quot;:101,&quot;name&quot;:&quot;category2&quot;},&quot;name&quot;:&quot;Tests&quot;,&quot;photoUrls&quot;:[&quot;def.com&quot;],&quot;tags&quot;:[{&quot;id&quot;:20,&quot;name&quot;:&quot;Cat&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:2348606728,&quot;category&quot;:{&quot;id&quot;:501553982,&quot;name&quot;:&quot;dog&quot;},&quot;name&quot;:&quot;hello kity&quot;,&quot;photoUrls&quot;:[&quot;http://foo.bar.com/1&quot;,&quot;http://foo.bar.com/2&quot;],&quot;tags&quot;:[{&quot;id&quot;:828039055,&quot;name&quot;:&quot;blank&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:2423586365,&quot;category&quot;:{&quot;id&quot;:2094768224,&quot;name&quot;:&quot;dog&quot;},&quot;name&quot;:&quot;hello kity&quot;,&quot;photoUrls&quot;:[&quot;http://foo.bar.com/1&quot;,&quot;http://foo.bar.com/2&quot;],&quot;tags&quot;:[{&quot;id&quot;:2008013897,&quot;name&quot;:&quot;blank&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:4117945412,&quot;category&quot;:{&quot;id&quot;:1719187880,&quot;name&quot;:&quot;dog&quot;},&quot;name&quot;:&quot;hello kity&quot;,&quot;photoUrls&quot;:[&quot;http://foo.bar.com/1&quot;,&quot;http://foo.bar.com/2&quot;],&quot;tags&quot;:[{&quot;id&quot;:2327129732,&quot;name&quot;:&quot;blank&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:739213967,&quot;category&quot;:{&quot;id&quot;:4115842988,&quot;name&quot;:&quot;dog&quot;},&quot;name&quot;:&quot;hello kity&quot;,&quot;photoUrls&quot;:[&quot;http://foo.bar.com/1&quot;,&quot;http://foo.bar.com/2&quot;],&quot;tags&quot;:[{&quot;id&quot;:3790585430,&quot;name&quot;:&quot;blank&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1976928844,&quot;category&quot;:{&quot;id&quot;:2034293177,&quot;name&quot;:&quot;dog&quot;},&quot;name&quot;:&quot;hello kity&quot;,&quot;photoUrls&quot;:[&quot;http://foo.bar.com/1&quot;,&quot;http://foo.bar.com/2&quot;],&quot;tags&quot;:[{&quot;id&quot;:3221514098,&quot;name&quot;:&quot;blank&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1231,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;zevs&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:11231,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;zevs&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:121231,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;zevs&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:5683456,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;Мурзик&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:20593238,&quot;category&quot;:{&quot;id&quot;:96650357,&quot;name&quot;:&quot;ut aute&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;in deserunt sit qui elit&quot;,&quot;do dolore&quot;],&quot;tags&quot;:[{&quot;id&quot;:80489283,&quot;name&quot;:&quot;dolore elit aute Excepteur anim&quot;},{&quot;id&quot;:-29854588,&quot;name&quot;:&quot;enim&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:92582,&quot;name&quot;:&quot;bJpRwL2&quot;,&quot;photoUrls&quot;:[&quot;nI6kD8u&quot;,&quot;A33PenQ&quot;,&quot;lcj0JON&quot;,&quot;YFfeD9j&quot;,&quot;3s2Gq9j&quot;,&quot;LGhY2kI&quot;,&quot;XYqpem3&quot;,&quot;nm0LraU&quot;,&quot;bKo24QY&quot;,&quot;kEB26Fa&quot;,&quot;a41R5iP&quot;,&quot;VBx2sx7&quot;,&quot;5f12DBt&quot;,&quot;MK6Rzh9&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:17,&quot;name&quot;:&quot;Special_char_owner_!@#$^&amp;()`.testing&quot;,&quot;photoUrls&quot;:[&quot;https://petstore3.swagger.io/resources/photos/623389095.jpg&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:19467,&quot;name&quot;:&quot;見響见响仮仏!$%&amp;()*+,-ƄƅƆḞḟṀʶʷʸăĄą&quot;,&quot;photoUrls&quot;:[&quot;https://petstore3.swagger.io/resources/photos/623389095.jpg&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1234567,&quot;category&quot;:{&quot;id&quot;:35,&quot;name&quot;:&quot;caini&quot;},&quot;name&quot;:&quot;Grivei update&quot;,&quot;photoUrls&quot;:[],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;dalmatian&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:734255,&quot;category&quot;:{&quot;id&quot;:89110,&quot;name&quot;:&quot;vurSoSGp&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;NnuXzv&quot;],&quot;tags&quot;:[{&quot;id&quot;:584156,&quot;name&quot;:&quot;zKKwcTrs&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:11133,&quot;category&quot;:{&quot;id&quot;:777,&quot;name&quot;:&quot;Грызун&quot;},&quot;name&quot;:&quot;Георгий&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:56331470,&quot;category&quot;:{&quot;id&quot;:28262311,&quot;name&quot;:&quot;nostrud proident&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;sunt dolor veniam aliqua&quot;,&quot;nulla anim ex&quot;],&quot;tags&quot;:[{&quot;id&quot;:21515670,&quot;name&quot;:&quot;voluptate in elit ani&quot;},{&quot;id&quot;:-36858804,&quot;name&quot;:&quot;proident non deserunt&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1010,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;zevs&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:24093935,&quot;category&quot;:{&quot;id&quot;:-6714225,&quot;name&quot;:&quot;do magna&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;aute&quot;,&quot;velit&quot;],&quot;tags&quot;:[{&quot;id&quot;:71561130,&quot;name&quot;:&quot;deserunt ut occaecat&quot;},{&quot;id&quot;:-1195842,&quot;name&quot;:&quot;nulla nostrud occaeca&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:3708840,&quot;category&quot;:{&quot;id&quot;:9855812,&quot;name&quot;:&quot;Duis in commodo&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;minim id in sit&quot;,&quot;est esse culpa nisi&quot;],&quot;tags&quot;:[{&quot;id&quot;:-89808508,&quot;name&quot;:&quot;sit&quot;},{&quot;id&quot;:-5238278,&quot;name&quot;:&quot;dolor in&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:91507602,&quot;category&quot;:{&quot;id&quot;:-95494262,&quot;name&quot;:&quot;sit ea&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;deserunt&quot;,&quot;id sint et&quot;],&quot;tags&quot;:[{&quot;id&quot;:-54029842,&quot;name&quot;:&quot;ullamco&quot;},{&quot;id&quot;:13198949,&quot;name&quot;:&quot;id&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:3903023,&quot;category&quot;:{&quot;id&quot;:-56789506,&quot;name&quot;:&quot;cillum p&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;aliquip Excepteur&quot;,&quot;commodo dolore consequat eu&quot;],&quot;tags&quot;:[{&quot;id&quot;:60937326,&quot;name&quot;:&quot;irure in&quot;},{&quot;id&quot;:20218536,&quot;name&quot;:&quot;sint consectetur ad voluptate&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:9,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;cats&quot;},&quot;name&quot;:&quot;King Kong&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:873,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;category pwbrmqp0v1&quot;},&quot;name&quot;:&quot;cats htecdg1sjz&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;tag bm6k6n3aql&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:960,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;category pur26id1tj&quot;},&quot;name&quot;:&quot;cats 40muhhhmk5q&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;tag 6g8cyre688p&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:795,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;category haduuhd6hjg&quot;},&quot;name&quot;:&quot;cats t3813yxb6ub&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;tag b7wje7aqv7i&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:620,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;category h8oogtqykzm&quot;},&quot;name&quot;:&quot;cats bj2hxecl2f&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;tag o8bqdxnxfar&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:521,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;category p62r4ty1xlc&quot;},&quot;name&quot;:&quot;cats qs9t5a1eu4&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;tag meengon2xl&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:402,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;category ma5y58dporm&quot;},&quot;name&quot;:&quot;cats 7sqzq9x0jf7&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;tag kwf2vormqvb&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:6398536345953696969,&quot;category&quot;:{&quot;id&quot;:2,&quot;name&quot;:&quot;biba&quot;},&quot;name&quot;:&quot;biba-boba&quot;,&quot;photoUrls&quot;:[],&quot;tags&quot;:[],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:52931566,&quot;category&quot;:{&quot;id&quot;:91307171,&quot;name&quot;:&quot;sint aliqua&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;ut culpa null&quot;,&quot;quis&quot;],&quot;tags&quot;:[{&quot;id&quot;:-40794559,&quot;name&quot;:&quot;velit proident nulla&quot;},{&quot;id&quot;:-14228534,&quot;name&quot;:&quot;ess&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:87705905,&quot;category&quot;:{&quot;id&quot;:22032096,&quot;name&quot;:&quot;reprehenderit in minim&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;cillum Ut &quot;,&quot;et adipisicing consequat&quot;],&quot;tags&quot;:[{&quot;id&quot;:-14103627,&quot;name&quot;:&quot;reprehenderit&quot;},{&quot;id&quot;:47181501,&quot;name&quot;:&quot;occaecat&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:38480305,&quot;category&quot;:{&quot;id&quot;:-59161747,&quot;name&quot;:&quot;Duis voluptate consequat&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;ex enim &quot;,&quot;nisi est&quot;],&quot;tags&quot;:[{&quot;id&quot;:49121599,&quot;name&quot;:&quot;non anim exercitation&quot;},{&quot;id&quot;:2672065,&quot;name&quot;:&quot;sint&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:2022000,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;bird&quot;},&quot;name&quot;:&quot;Star&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;shy&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:60,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:5644444,&quot;category&quot;:{&quot;id&quot;:566555,&quot;name&quot;:&quot;nulla minim laborum deserunt&quot;},&quot;name&quot;:&quot;Собака&quot;,&quot;photoUrls&quot;:[&quot;anim ullamco laborum eu&quot;,&quot;eiusm&quot;],&quot;tags&quot;:[{&quot;id&quot;:10156776,&quot;name&quot;:&quot;cillum adipisicing&quot;},{&quot;id&quot;:-53013483,&quot;name&quot;:&quot;sit Ut enim dolore&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:23437566,&quot;category&quot;:{&quot;id&quot;:-46393995,&quot;name&quot;:&quot;ex ea culpa&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;ut ex veniam dolor&quot;,&quot;in aliquip&quot;],&quot;tags&quot;:[{&quot;id&quot;:91638732,&quot;name&quot;:&quot;Excepteur ea commodo esse&quot;},{&quot;id&quot;:42980181,&quot;name&quot;:&quot;nulla officia ut labore&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:62751340,&quot;category&quot;:{&quot;id&quot;:-37441254,&quot;name&quot;:&quot;aute cillum voluptate veniam&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;mollit veniam&quot;,&quot;dolor enim reprehenderit&quot;],&quot;tags&quot;:[{&quot;id&quot;:91709679,&quot;name&quot;:&quot;anim adipisicing&quot;},{&quot;id&quot;:919209,&quot;name&quot;:&quot;sint anim&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:9223372036854773917,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;boss2.0&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:79897977,&quot;category&quot;:{&quot;id&quot;:-43696612,&quot;name&quot;:&quot;exercitation&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;dolor&quot;,&quot;velit voluptate&quot;],&quot;tags&quot;:[{&quot;id&quot;:59218385,&quot;name&quot;:&quot;aliqua&quot;},{&quot;id&quot;:72829050,&quot;name&quot;:&quot;nostrud ut&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:51338511,&quot;category&quot;:{&quot;id&quot;:43003430,&quot;name&quot;:&quot;ex ullamco&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;sit ipsum&quot;,&quot;nulla eu aliqua incididunt&quot;],&quot;tags&quot;:[{&quot;id&quot;:1864541,&quot;name&quot;:&quot;anim elit amet&quot;},{&quot;id&quot;:98553871,&quot;name&quot;:&quot;ut&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:71551342,&quot;category&quot;:{&quot;id&quot;:14955550,&quot;name&quot;:&quot;ipsum do amet&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;dolore dolor&quot;,&quot;pariatur elit ea&quot;],&quot;tags&quot;:[{&quot;id&quot;:-17398234,&quot;name&quot;:&quot;non ex&quot;},{&quot;id&quot;:-32010324,&quot;name&quot;:&quot;ut culpa aliqua est non&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:777123,&quot;category&quot;:{&quot;id&quot;:777123,&quot;name&quot;:&quot;fish&quot;},&quot;name&quot;:&quot;Nemo&quot;,&quot;photoUrls&quot;:[&quot;https://img1.fonwall.ru/o/hl/sea-photography-flower-underwater.jpeg?route=mid&amp;amp;h=750&quot;,&quot;https://img1.fonwall.ru/o/hl/sea-photography-flower-underwater.jpeg?route=mid&amp;amp;h=750&quot;],&quot;tags&quot;:[{&quot;id&quot;:123,&quot;name&quot;:&quot;priff&quot;},{&quot;id&quot;:123,&quot;name&quot;:&quot;ribka&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:33377689,&quot;category&quot;:{&quot;id&quot;:-5871190,&quot;name&quot;:&quot;in voluptate velit proident&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;amet in&quot;,&quot;aute in&quot;],&quot;tags&quot;:[{&quot;id&quot;:-26593919,&quot;name&quot;:&quot;tempor eiusmod ipsum&quot;},{&quot;id&quot;:78722837,&quot;name&quot;:&quot;in sit ullamco aliqua qui&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:24364310,&quot;category&quot;:{&quot;id&quot;:-12307344,&quot;name&quot;:&quot;kitten бфрмалейка&quot;},&quot;name&quot;:&quot;kitten1&quot;,&quot;photoUrls&quot;:[&quot;dolor in&quot;,&quot;occaecat dolore consectetur adipisicing&quot;],&quot;tags&quot;:[{&quot;id&quot;:-22679152,&quot;name&quot;:&quot;non ex&quot;},{&quot;id&quot;:33284191,&quot;name&quot;:&quot;sed pariatur in&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:70119872,&quot;category&quot;:{&quot;id&quot;:93142102,&quot;name&quot;:&quot;Змея&quot;},&quot;name&quot;:&quot;Анаконда&quot;,&quot;photoUrls&quot;:[&quot;mollit&quot;,&quot;https://irecommend.ru/sites/default/files/product-images/98227/3lJyZagay9aoxv06o6TJCQ.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:-19037377,&quot;name&quot;:&quot;deserunt veniam nulla reprehenderit&quot;},{&quot;id&quot;:51503358,&quot;name&quot;:&quot;ullamco aliqua Excepteur cillum&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:70119872000,&quot;category&quot;:{&quot;id&quot;:93142102,&quot;name&quot;:&quot;Заяц французский 2&quot;},&quot;name&quot;:&quot;LAPIN LAPIN&quot;,&quot;photoUrls&quot;:[&quot;mollit&quot;,&quot;https://irecommend.ru/sites/default/files/product-images/98227/3lJyZagay9aoxv06o6TJCQ.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:-19037377,&quot;name&quot;:&quot;deserunt veniam nulla reprehenderit&quot;},{&quot;id&quot;:51503358,&quot;name&quot;:&quot;ullamco aliqua Excepteur cillum&quot;}],&quot;status&quot;:&quot;sold&quot;}]
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def recovered = jsFunFeature.modifiedResponse(response)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">44</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print recovered</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.33">22:27:00.971 [print] [
+  {
+    &quot;petId&quot;: 118,
+    &quot;petName&quot;: &quot;rnn&quot;
+  },
+  {
+    &quot;petId&quot;: 109,
+    &quot;petName&quot;: &quot;imr&quot;
+  },
+  {
+    &quot;petId&quot;: 127,
+    &quot;petName&quot;: &quot;8bq&quot;
+  },
+  {
+    &quot;petId&quot;: 7574746,
+    &quot;petName&quot;: &quot;Hardy&quot;
+  },
+  {
+    &quot;petId&quot;: 3146,
+    &quot;petName&quot;: &quot;Gigi791&quot;
+  },
+  {
+    &quot;petId&quot;: 4187,
+    &quot;petName&quot;: &quot;Gigi620&quot;
+  },
+  {
+    &quot;petId&quot;: 108,
+    &quot;petName&quot;: &quot;b96&quot;
+  },
+  {
+    &quot;petId&quot;: 9223372016900063838,
+    &quot;petName&quot;: &quot;Luna&quot;
+  },
+  {
+    &quot;petId&quot;: 50907655,
+    &quot;petName&quot;: &quot;catmy&quot;
+  },
+  {
+    &quot;petId&quot;: 136,
+    &quot;petName&quot;: &quot;gb4&quot;
+  },
+  {
+    &quot;petId&quot;: 153,
+    &quot;petName&quot;: &quot;2ac&quot;
+  },
+  {
+    &quot;petId&quot;: 172,
+    &quot;petName&quot;: &quot;Joshua Weaver&quot;
+  },
+  {
+    &quot;petId&quot;: 148,
+    &quot;petName&quot;: &quot;t6o&quot;
+  },
+  {
+    &quot;petId&quot;: 175,
+    &quot;petName&quot;: &quot;2zf&quot;
+  },
+  {
+    &quot;petId&quot;: 185,
+    &quot;petName&quot;: &quot;e6f&quot;
+  },
+  {
+    &quot;petId&quot;: 120,
+    &quot;petName&quot;: &quot;hyz&quot;
+  },
+  {
+    &quot;petId&quot;: 166,
+    &quot;petName&quot;: &quot;ewm&quot;
+  },
+  {
+    &quot;petId&quot;: 176,
+    &quot;petName&quot;: &quot;9m4&quot;
+  },
+  {
+    &quot;petId&quot;: 191,
+    &quot;petName&quot;: &quot;cats 5m75h30iz08&quot;
+  },
+  {
+    &quot;petId&quot;: 149,
+    &quot;petName&quot;: &quot;ytg&quot;
+  },
+  {
+    &quot;petId&quot;: 189,
+    &quot;petName&quot;: &quot;nvv&quot;
+  },
+  {
+    &quot;petId&quot;: 198,
+    &quot;petName&quot;: &quot;cats k6043j4tvnl&quot;
+  },
+  {
+    &quot;petId&quot;: 114,
+    &quot;petName&quot;: &quot;kfj&quot;
+  },
+  {
+    &quot;petId&quot;: 168,
+    &quot;petName&quot;: &quot;cats zojd46460m&quot;
+  },
+  {
+    &quot;petId&quot;: 692,
+    &quot;petName&quot;: &quot;Alessia&quot;
+  },
+  {
+    &quot;petId&quot;: 627,
+    &quot;petName&quot;: &quot;Jose&quot;
+  },
+  {
+    &quot;petId&quot;: 13,
+    &quot;petName&quot;: null
+  },
+  {
+    &quot;petId&quot;: 751,
+    &quot;petName&quot;: &quot;Diana Benson&quot;
+  },
+  {
+    &quot;petId&quot;: 216,
+    &quot;petName&quot;: &quot;Theresa Ford&quot;
+  },
+  {
+    &quot;petId&quot;: 303,
+    &quot;petName&quot;: &quot;Busya&quot;
+  },
+  {
+    &quot;petId&quot;: 16,
+    &quot;petName&quot;: &quot;Tom&quot;
+  },
+  {
+    &quot;petId&quot;: 641,
+    &quot;petName&quot;: &quot;Jason Jordan&quot;
+  },
+  {
+    &quot;petId&quot;: 6176,
+    &quot;petName&quot;: &quot;Nmjhhs1nuq&quot;
+  },
+  {
+    &quot;petId&quot;: 31,
+    &quot;petName&quot;: &quot;Zachary Hill&quot;
+  },
+  {
+    &quot;petId&quot;: 254,
+    &quot;petName&quot;: &quot;cats oiwr8hqnwpn&quot;
+  },
+  {
+    &quot;petId&quot;: 239,
+    &quot;petName&quot;: &quot;cats 9sfdggw3cop&quot;
+  },
+  {
+    &quot;petId&quot;: 32323242323,
+    &quot;petName&quot;: &quot;cshaplin&quot;
+  },
+  {
+    &quot;petId&quot;: 56834567,
+    &quot;petName&quot;: &quot;Мурзик&quot;
+  },
+  {
+    &quot;petId&quot;: 55325269,
+    &quot;petName&quot;: &quot;doggie&quot;
+  },
+  {
+    &quot;petId&quot;: 666,
+    &quot;petName&quot;: &quot;CyberDemon&quot;
+  },
+  {
+    &quot;petId&quot;: 443,
+    &quot;petName&quot;: &quot;Bryan Curry&quot;
+  },
+  {
+    &quot;petId&quot;: 967,
+    &quot;petName&quot;: &quot;uptDaniel Thomas&quot;
+  },
+  {
+    &quot;petId&quot;: 483,
+    &quot;petName&quot;: &quot;uptNicole Morgan&quot;
+  },
+  {
+    &quot;petId&quot;: 2205,
+    &quot;petName&quot;: &quot;Tests&quot;
+  },
+  {
+    &quot;petId&quot;: 2348606728,
+    &quot;petName&quot;: &quot;hello kity&quot;
+  },
+  {
+    &quot;petId&quot;: 2423586365,
+    &quot;petName&quot;: &quot;hello kity&quot;
+  },
+  {
+    &quot;petId&quot;: 4117945412,
+    &quot;petName&quot;: &quot;hello kity&quot;
+  },
+  {
+    &quot;petId&quot;: 739213967,
+    &quot;petName&quot;: &quot;hello kity&quot;
+  },
+  {
+    &quot;petId&quot;: 1976928844,
+    &quot;petName&quot;: &quot;hello kity&quot;
+  },
+  {
+    &quot;petId&quot;: 1231,
+    &quot;petName&quot;: &quot;doggie&quot;
+  },
+  {
+    &quot;petId&quot;: 11231,
+    &quot;petName&quot;: &quot;doggie&quot;
+  },
+  {
+    &quot;petId&quot;: 121231,
+    &quot;petName&quot;: &quot;doggie&quot;
+  },
+  {
+    &quot;petId&quot;: 5683456,
+    &quot;petName&quot;: &quot;Мурзик&quot;
+  },
+  {
+    &quot;petId&quot;: 20593238,
+    &quot;petName&quot;: &quot;doggie&quot;
+  },
+  {
+    &quot;petId&quot;: 92582,
+    &quot;petName&quot;: &quot;bJpRwL2&quot;
+  },
+  {
+    &quot;petId&quot;: 17,
+    &quot;petName&quot;: &quot;Special_char_owner_!@#$^&amp;()`.testing&quot;
+  },
+  {
+    &quot;petId&quot;: 19467,
+    &quot;petName&quot;: &quot;見響见响仮仏!$%&amp;()*+,-ƄƅƆḞḟṀʶʷʸăĄą&quot;
+  },
+  {
+    &quot;petId&quot;: 1234567,
+    &quot;petName&quot;: &quot;Grivei update&quot;
+  },
+  {
+    &quot;petId&quot;: 734255,
+    &quot;petName&quot;: &quot;doggie&quot;
+  },
+  {
+    &quot;petId&quot;: 11133,
+    &quot;petName&quot;: &quot;Георгий&quot;
+  },
+  {
+    &quot;petId&quot;: 56331470,
+    &quot;petName&quot;: &quot;doggie&quot;
+  },
+  {
+    &quot;petId&quot;: 1010,
+    &quot;petName&quot;: &quot;doggie&quot;
+  },
+  {
+    &quot;petId&quot;: 24093935,
+    &quot;petName&quot;: &quot;doggie&quot;
+  },
+  {
+    &quot;petId&quot;: 3708840,
+    &quot;petName&quot;: &quot;doggie&quot;
+  },
+  {
+    &quot;petId&quot;: 91507602,
+    &quot;petName&quot;: &quot;doggie&quot;
+  },
+  {
+    &quot;petId&quot;: 3903023,
+    &quot;petName&quot;: &quot;doggie&quot;
+  },
+  {
+    &quot;petId&quot;: 9,
+    &quot;petName&quot;: &quot;King Kong&quot;
+  },
+  {
+    &quot;petId&quot;: 873,
+    &quot;petName&quot;: &quot;cats htecdg1sjz&quot;
+  },
+  {
+    &quot;petId&quot;: 960,
+    &quot;petName&quot;: &quot;cats 40muhhhmk5q&quot;
+  },
+  {
+    &quot;petId&quot;: 795,
+    &quot;petName&quot;: &quot;cats t3813yxb6ub&quot;
+  },
+  {
+    &quot;petId&quot;: 620,
+    &quot;petName&quot;: &quot;cats bj2hxecl2f&quot;
+  },
+  {
+    &quot;petId&quot;: 521,
+    &quot;petName&quot;: &quot;cats qs9t5a1eu4&quot;
+  },
+  {
+    &quot;petId&quot;: 402,
+    &quot;petName&quot;: &quot;cats 7sqzq9x0jf7&quot;
+  },
+  {
+    &quot;petId&quot;: 6398536345953696969,
+    &quot;petName&quot;: &quot;biba-boba&quot;
+  },
+  {
+    &quot;petId&quot;: 52931566,
+    &quot;petName&quot;: &quot;doggie&quot;
+  },
+  {
+    &quot;petId&quot;: 87705905,
+    &quot;petName&quot;: &quot;doggie&quot;
+  },
+  {
+    &quot;petId&quot;: 38480305,
+    &quot;petName&quot;: &quot;doggie&quot;
+  },
+  {
+    &quot;petId&quot;: 2022000,
+    &quot;petName&quot;: &quot;Star&quot;
+  },
+  {
+    &quot;petId&quot;: 60,
+    &quot;petName&quot;: &quot;doggie&quot;
+  },
+  {
+    &quot;petId&quot;: 5644444,
+    &quot;petName&quot;: &quot;Собака&quot;
+  },
+  {
+    &quot;petId&quot;: 23437566,
+    &quot;petName&quot;: &quot;doggie&quot;
+  },
+  {
+    &quot;petId&quot;: 62751340,
+    &quot;petName&quot;: &quot;doggie&quot;
+  },
+  {
+    &quot;petId&quot;: 9223372036854773917,
+    &quot;petName&quot;: &quot;boss2.0&quot;
+  },
+  {
+    &quot;petId&quot;: 79897977,
+    &quot;petName&quot;: &quot;doggie&quot;
+  },
+  {
+    &quot;petId&quot;: 51338511,
+    &quot;petName&quot;: &quot;doggie&quot;
+  },
+  {
+    &quot;petId&quot;: 71551342,
+    &quot;petName&quot;: &quot;doggie&quot;
+  },
+  {
+    &quot;petId&quot;: 777123,
+    &quot;petName&quot;: &quot;Nemo&quot;
+  },
+  {
+    &quot;petId&quot;: 33377689,
+    &quot;petName&quot;: &quot;doggie&quot;
+  },
+  {
+    &quot;petId&quot;: 24364310,
+    &quot;petName&quot;: &quot;kitten1&quot;
+  },
+  {
+    &quot;petId&quot;: 70119872,
+    &quot;petName&quot;: &quot;Анаконда&quot;
+  },
+  {
+    &quot;petId&quot;: 70119872000,
+    &quot;petName&quot;: &quot;LAPIN LAPIN&quot;
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print jsFunFeature.nameRepetitions(recovered)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">21</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.34">22:27:00.992 [print] {
+  &quot;[object Object]&quot;: 91
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def recovered2 = jsFunClass.modifiedResponse(response)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">17</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print recovered2</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.36">22:27:01.012 [print] [
+  {
+    &quot;petId&quot;: 118,
+    &quot;petName&quot;: &quot;rnn&quot;
+  },
+  {
+    &quot;petId&quot;: 109,
+    &quot;petName&quot;: &quot;imr&quot;
+  },
+  {
+    &quot;petId&quot;: 127,
+    &quot;petName&quot;: &quot;8bq&quot;
+  },
+  {
+    &quot;petId&quot;: 7574746,
+    &quot;petName&quot;: &quot;Hardy&quot;
+  },
+  {
+    &quot;petId&quot;: 3146,
+    &quot;petName&quot;: &quot;Gigi791&quot;
+  },
+  {
+    &quot;petId&quot;: 4187,
+    &quot;petName&quot;: &quot;Gigi620&quot;
+  },
+  {
+    &quot;petId&quot;: 108,
+    &quot;petName&quot;: &quot;b96&quot;
+  },
+  {
+    &quot;petId&quot;: 9223372016900063838,
+    &quot;petName&quot;: &quot;Luna&quot;
+  },
+  {
+    &quot;petId&quot;: 50907655,
+    &quot;petName&quot;: &quot;catmy&quot;
+  },
+  {
+    &quot;petId&quot;: 136,
+    &quot;petName&quot;: &quot;gb4&quot;
+  },
+  {
+    &quot;petId&quot;: 153,
+    &quot;petName&quot;: &quot;2ac&quot;
+  },
+  {
+    &quot;petId&quot;: 172,
+    &quot;petName&quot;: &quot;Joshua Weaver&quot;
+  },
+  {
+    &quot;petId&quot;: 148,
+    &quot;petName&quot;: &quot;t6o&quot;
+  },
+  {
+    &quot;petId&quot;: 175,
+    &quot;petName&quot;: &quot;2zf&quot;
+  },
+  {
+    &quot;petId&quot;: 185,
+    &quot;petName&quot;: &quot;e6f&quot;
+  },
+  {
+    &quot;petId&quot;: 120,
+    &quot;petName&quot;: &quot;hyz&quot;
+  },
+  {
+    &quot;petId&quot;: 166,
+    &quot;petName&quot;: &quot;ewm&quot;
+  },
+  {
+    &quot;petId&quot;: 176,
+    &quot;petName&quot;: &quot;9m4&quot;
+  },
+  {
+    &quot;petId&quot;: 191,
+    &quot;petName&quot;: &quot;cats 5m75h30iz08&quot;
+  },
+  {
+    &quot;petId&quot;: 149,
+    &quot;petName&quot;: &quot;ytg&quot;
+  },
+  {
+    &quot;petId&quot;: 189,
+    &quot;petName&quot;: &quot;nvv&quot;
+  },
+  {
+    &quot;petId&quot;: 198,
+    &quot;petName&quot;: &quot;cats k6043j4tvnl&quot;
+  },
+  {
+    &quot;petId&quot;: 114,
+    &quot;petName&quot;: &quot;kfj&quot;
+  },
+  {
+    &quot;petId&quot;: 168,
+    &quot;petName&quot;: &quot;cats zojd46460m&quot;
+  },
+  {
+    &quot;petId&quot;: 692,
+    &quot;petName&quot;: &quot;Alessia&quot;
+  },
+  {
+    &quot;petId&quot;: 627,
+    &quot;petName&quot;: &quot;Jose&quot;
+  },
+  {
+    &quot;petId&quot;: 13,
+    &quot;petName&quot;: null
+  },
+  {
+    &quot;petId&quot;: 751,
+    &quot;petName&quot;: &quot;Diana Benson&quot;
+  },
+  {
+    &quot;petId&quot;: 216,
+    &quot;petName&quot;: &quot;Theresa Ford&quot;
+  },
+  {
+    &quot;petId&quot;: 303,
+    &quot;petName&quot;: &quot;Busya&quot;
+  },
+  {
+    &quot;petId&quot;: 16,
+    &quot;petName&quot;: &quot;Tom&quot;
+  },
+  {
+    &quot;petId&quot;: 641,
+    &quot;petName&quot;: &quot;Jason Jordan&quot;
+  },
+  {
+    &quot;petId&quot;: 6176,
+    &quot;petName&quot;: &quot;Nmjhhs1nuq&quot;
+  },
+  {
+    &quot;petId&quot;: 31,
+    &quot;petName&quot;: &quot;Zachary Hill&quot;
+  },
+  {
+    &quot;petId&quot;: 254,
+    &quot;petName&quot;: &quot;cats oiwr8hqnwpn&quot;
+  },
+  {
+    &quot;petId&quot;: 239,
+    &quot;petName&quot;: &quot;cats 9sfdggw3cop&quot;
+  },
+  {
+    &quot;petId&quot;: 32323242323,
+    &quot;petName&quot;: &quot;cshaplin&quot;
+  },
+  {
+    &quot;petId&quot;: 56834567,
+    &quot;petName&quot;: &quot;Мурзик&quot;
+  },
+  {
+    &quot;petId&quot;: 55325269,
+    &quot;petName&quot;: &quot;doggie&quot;
+  },
+  {
+    &quot;petId&quot;: 666,
+    &quot;petName&quot;: &quot;CyberDemon&quot;
+  },
+  {
+    &quot;petId&quot;: 443,
+    &quot;petName&quot;: &quot;Bryan Curry&quot;
+  },
+  {
+    &quot;petId&quot;: 967,
+    &quot;petName&quot;: &quot;uptDaniel Thomas&quot;
+  },
+  {
+    &quot;petId&quot;: 483,
+    &quot;petName&quot;: &quot;uptNicole Morgan&quot;
+  },
+  {
+    &quot;petId&quot;: 2205,
+    &quot;petName&quot;: &quot;Tests&quot;
+  },
+  {
+    &quot;petId&quot;: 2348606728,
+    &quot;petName&quot;: &quot;hello kity&quot;
+  },
+  {
+    &quot;petId&quot;: 2423586365,
+    &quot;petName&quot;: &quot;hello kity&quot;
+  },
+  {
+    &quot;petId&quot;: 4117945412,
+    &quot;petName&quot;: &quot;hello kity&quot;
+  },
+  {
+    &quot;petId&quot;: 739213967,
+    &quot;petName&quot;: &quot;hello kity&quot;
+  },
+  {
+    &quot;petId&quot;: 1976928844,
+    &quot;petName&quot;: &quot;hello kity&quot;
+  },
+  {
+    &quot;petId&quot;: 1231,
+    &quot;petName&quot;: &quot;doggie&quot;
+  },
+  {
+    &quot;petId&quot;: 11231,
+    &quot;petName&quot;: &quot;doggie&quot;
+  },
+  {
+    &quot;petId&quot;: 121231,
+    &quot;petName&quot;: &quot;doggie&quot;
+  },
+  {
+    &quot;petId&quot;: 5683456,
+    &quot;petName&quot;: &quot;Мурзик&quot;
+  },
+  {
+    &quot;petId&quot;: 20593238,
+    &quot;petName&quot;: &quot;doggie&quot;
+  },
+  {
+    &quot;petId&quot;: 92582,
+    &quot;petName&quot;: &quot;bJpRwL2&quot;
+  },
+  {
+    &quot;petId&quot;: 17,
+    &quot;petName&quot;: &quot;Special_char_owner_!@#$^&amp;()`.testing&quot;
+  },
+  {
+    &quot;petId&quot;: 19467,
+    &quot;petName&quot;: &quot;見響见响仮仏!$%&amp;()*+,-ƄƅƆḞḟṀʶʷʸăĄą&quot;
+  },
+  {
+    &quot;petId&quot;: 1234567,
+    &quot;petName&quot;: &quot;Grivei update&quot;
+  },
+  {
+    &quot;petId&quot;: 734255,
+    &quot;petName&quot;: &quot;doggie&quot;
+  },
+  {
+    &quot;petId&quot;: 11133,
+    &quot;petName&quot;: &quot;Георгий&quot;
+  },
+  {
+    &quot;petId&quot;: 56331470,
+    &quot;petName&quot;: &quot;doggie&quot;
+  },
+  {
+    &quot;petId&quot;: 1010,
+    &quot;petName&quot;: &quot;doggie&quot;
+  },
+  {
+    &quot;petId&quot;: 24093935,
+    &quot;petName&quot;: &quot;doggie&quot;
+  },
+  {
+    &quot;petId&quot;: 3708840,
+    &quot;petName&quot;: &quot;doggie&quot;
+  },
+  {
+    &quot;petId&quot;: 91507602,
+    &quot;petName&quot;: &quot;doggie&quot;
+  },
+  {
+    &quot;petId&quot;: 3903023,
+    &quot;petName&quot;: &quot;doggie&quot;
+  },
+  {
+    &quot;petId&quot;: 9,
+    &quot;petName&quot;: &quot;King Kong&quot;
+  },
+  {
+    &quot;petId&quot;: 873,
+    &quot;petName&quot;: &quot;cats htecdg1sjz&quot;
+  },
+  {
+    &quot;petId&quot;: 960,
+    &quot;petName&quot;: &quot;cats 40muhhhmk5q&quot;
+  },
+  {
+    &quot;petId&quot;: 795,
+    &quot;petName&quot;: &quot;cats t3813yxb6ub&quot;
+  },
+  {
+    &quot;petId&quot;: 620,
+    &quot;petName&quot;: &quot;cats bj2hxecl2f&quot;
+  },
+  {
+    &quot;petId&quot;: 521,
+    &quot;petName&quot;: &quot;cats qs9t5a1eu4&quot;
+  },
+  {
+    &quot;petId&quot;: 402,
+    &quot;petName&quot;: &quot;cats 7sqzq9x0jf7&quot;
+  },
+  {
+    &quot;petId&quot;: 6398536345953696969,
+    &quot;petName&quot;: &quot;biba-boba&quot;
+  },
+  {
+    &quot;petId&quot;: 52931566,
+    &quot;petName&quot;: &quot;doggie&quot;
+  },
+  {
+    &quot;petId&quot;: 87705905,
+    &quot;petName&quot;: &quot;doggie&quot;
+  },
+  {
+    &quot;petId&quot;: 38480305,
+    &quot;petName&quot;: &quot;doggie&quot;
+  },
+  {
+    &quot;petId&quot;: 2022000,
+    &quot;petName&quot;: &quot;Star&quot;
+  },
+  {
+    &quot;petId&quot;: 60,
+    &quot;petName&quot;: &quot;doggie&quot;
+  },
+  {
+    &quot;petId&quot;: 5644444,
+    &quot;petName&quot;: &quot;Собака&quot;
+  },
+  {
+    &quot;petId&quot;: 23437566,
+    &quot;petName&quot;: &quot;doggie&quot;
+  },
+  {
+    &quot;petId&quot;: 62751340,
+    &quot;petName&quot;: &quot;doggie&quot;
+  },
+  {
+    &quot;petId&quot;: 9223372036854773917,
+    &quot;petName&quot;: &quot;boss2.0&quot;
+  },
+  {
+    &quot;petId&quot;: 79897977,
+    &quot;petName&quot;: &quot;doggie&quot;
+  },
+  {
+    &quot;petId&quot;: 51338511,
+    &quot;petName&quot;: &quot;doggie&quot;
+  },
+  {
+    &quot;petId&quot;: 71551342,
+    &quot;petName&quot;: &quot;doggie&quot;
+  },
+  {
+    &quot;petId&quot;: 777123,
+    &quot;petName&quot;: &quot;Nemo&quot;
+  },
+  {
+    &quot;petId&quot;: 33377689,
+    &quot;petName&quot;: &quot;doggie&quot;
+  },
+  {
+    &quot;petId&quot;: 24364310,
+    &quot;petName&quot;: &quot;kitten1&quot;
+  },
+  {
+    &quot;petId&quot;: 70119872,
+    &quot;petName&quot;: &quot;Анаконда&quot;
+  },
+  {
+    &quot;petId&quot;: 70119872000,
+    &quot;petName&quot;: &quot;LAPIN LAPIN&quot;
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print jsFunClass.nameRepetitions(recovered2)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">15</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.37">22:27:01.027 [print] {
+  &quot;[object Object]&quot;: 91
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

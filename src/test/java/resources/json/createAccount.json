@@ -1,0 +1,10 @@
+{
+    "id": "#(variables[0].id)",
+    "username": "#(variables[0].userName)",
+    "firstName": "#(variables[0].firstName)",
+    "lastName": "#(variables[0].lastName)",
+    "email": "#(variables[0].email)",
+    "password": "#(variables[0].pass)",
+    "phone": "#(variables[0].phone)",
+    "userStatus": "#(variables[0].userStatus)"
+}

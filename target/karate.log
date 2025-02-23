@@ -1,0 +1,833 @@
+22:26:58.993 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:26:59.739 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+22:26:59.739 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+22:26:59.865 [pool-1-thread-1] INFO  com.intuit.karate - [print] {
+  "id": 4,
+  "username": "JD24",
+  "firstName": "Jesús",
+  "lastName": "Muñoz",
+  "email": "mai@mail.com",
+  "password": "pass1234",
+  "phone": "123456789",
+  "userStatus": 0
+}
+ 
+22:27:00.296 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/pet/findByStatus?status=sold
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:27:00.297 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/user
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 147
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+1 > Accept-Encoding: gzip,deflate
+{"id":4,"username":"JD24","firstName":"Jesús","lastName":"Muñoz","email":"mai@mail.com","password":"pass1234","phone":"123456789","userStatus":0}
+
+22:27:00.800 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 496
+1 < 200
+1 < Date: Thu, 20 Feb 2025 21:27:00 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"code":200,"type":"unknown","message":"4"}
+22:27:00.802 [pool-1-thread-1] INFO  com.intuit.karate - [print] {
+  "code": 200,
+  "type": "unknown",
+  "message": "4"
+}
+ 
+22:27:00.806 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+2 > GET https://petstore.swagger.io/v2/user/JD24
+2 > Host: petstore.swagger.io
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+2 > Accept-Encoding: gzip,deflate
+
+
+22:27:00.922 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 620
+1 < 200
+1 < Date: Thu, 20 Feb 2025 21:27:00 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+[{"id":118,"category":{"id":0,"name":"dxs"},"name":"rnn","photoUrls":["string"],"tags":[{"id":0,"name":"7yt"}],"status":"sold"},{"id":109,"category":{"id":0,"name":"8j1"},"name":"imr","photoUrls":["string"],"tags":[{"id":0,"name":"1ao"}],"status":"sold"},{"id":127,"category":{"id":0,"name":"rkb"},"name":"8bq","photoUrls":["string"],"tags":[{"id":0,"name":"4ha"}],"status":"sold"},{"id":7574746,"category":{"id":1,"name":"Cat"},"name":"Hardy","photoUrls":["https://i.pinimg.com/originals/5c/2c/44/5c2c44f16da1caf134c00bc4f9c72ea0.jpg"],"tags":[{"id":7805,"name":"Mainecoon"}],"status":"sold"},{"id":3146,"name":"Gigi791","photoUrls":[],"tags":[],"status":"sold"},{"id":4187,"name":"Gigi620","photoUrls":[],"tags":[],"status":"sold"},{"id":108,"category":{"id":0,"name":"4k7"},"name":"b96","photoUrls":["string"],"tags":[{"id":0,"name":"uye"}],"status":"sold"},{"id":9223372016900063838,"category":{"id":0,"name":"Cats"},"name":"Luna","photoUrls":["https://th.bing.com/th/id/OIP.V32oJaaJyc-aCo4x-mtuVgHaFS?rs=1&pid=ImgDetMain"],"tags":[{"id":1,"name":"scottish"}],"status":"sold"},{"id":50907655,"category":{"id":10,"name":"category33"},"name":"catmy","photoUrls":["https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_67af46be36a76d12eaa57900_67af46bf36a76d12eaa58105/scale_1200"],"tags":[{"id":95,"name":"Viktorka"}],"status":"sold"},{"id":136,"category":{"id":0,"name":"ofo"},"name":"gb4","photoUrls":["string"],"tags":[{"id":0,"name":"8q0"}],"status":"sold"},{"id":153,"category":{"id":0,"name":"ixn"},"name":"2ac","photoUrls":["string"],"tags":[{"id":0,"name":"ugw"}],"status":"sold"},{"id":172,"category":{"id":14,"name":"parent"},"name":"Joshua Weaver","photoUrls":["https://placekitten.com/546/862"],"tags":[{"id":40,"name":"morning"}],"status":"sold"},{"id":148,"category":{"id":0,"name":"vws"},"name":"t6o","photoUrls":["string"],"tags":[{"id":0,"name":"zs7"}],"status":"sold"},{"id":175,"category":{"id":0,"name":"jsc"},"name":"2zf","photoUrls":["string"],"tags":[{"id":0,"name":"rkj"}],"status":"sold"},{"id":185,"category":{"id":0,"name":"bnb"},"name":"e6f","photoUrls":["string"],"tags":[{"id":0,"name":"v21"}],"status":"sold"},{"id":120,"category":{"id":0,"name":"7ok"},"name":"hyz","photoUrls":["string"],"tags":[{"id":0,"name":"6hd"}],"status":"sold"},{"id":166,"category":{"id":0,"name":"cxa"},"name":"ewm","photoUrls":["string"],"tags":[{"id":0,"name":"56z"}],"status":"sold"},{"id":176,"category":{"id":0,"name":"kak"},"name":"9m4","photoUrls":["string"],"tags":[{"id":0,"name":"tfv"}],"status":"sold"},{"id":191,"category":{"id":0,"name":"catMiy"},"name":"cats 5m75h30iz08","photoUrls":["string"],"tags":[{"id":0,"name":"Marsi"}],"status":"sold"},{"id":149,"category":{"id":0,"name":"7w8"},"name":"ytg","photoUrls":["string"],"tags":[{"id":0,"name":"ooo"}],"status":"sold"},{"id":189,"category":{"id":0,"name":"9ab"},"name":"nvv","photoUrls":["string"],"tags":[{"id":0,"name":"pg5"}],"status":"sold"},{"id":198,"category":{"id":0,"name":"category uo68v2npxg"},"name":"cats k6043j4tvnl","photoUrls":["string"],"tags":[{"id":0,"name":"tag 7bh078rg2bg"}],"status":"sold"},{"id":114,"category":{"id":0,"name":"fdm"},"name":"kfj","photoUrls":["string"],"tags":[{"id":0,"name":"9bj"}],"status":"sold"},{"id":168,"category":{"id":0,"name":"category b604jnkjhqa"},"name":"cats zojd46460m","photoUrls":["string"],"tags":[{"id":0,"name":"tag cyh3n9u36r"}],"status":"sold"},{"id":692,"category":{"id":0,"name":"dog"},"name":"Alessia","photoUrls":["https://cdn.britannica.com/41/233841-050-4FFECCF1/Pomeranian-dog.jpg"],"tags":[{"id":0,"name":"pomeranian"}],"status":"sold"},{"id":627,"category":{"id":0,"name":"dog"},"name":"Jose","photoUrls":["https://cdn.britannica.com/41/233841-050-4FFECCF1/Pomeranian-dog.jpg"],"tags":[{"id":0,"name":"pomeranian"}],"status":"sold"},{"id":13,"category":{"id":0,"name":"cats"},"photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"},{"id":751,"name":"Diana Benson","photoUrls":["https://dummyimage.com/16x157"],"tags":[],"status":"sold"},{"id":216,"name":"Theresa Ford","photoUrls":["https://placekitten.com/516/840"],"tags":[],"status":"sold"},{"id":303,"category":{"id":3030,"name":"cat"},"name":"Busya","photoUrls":["<string>","<string>","<string>"],"tags":[{"id":202,"name":"funny"}],"status":"sold"},{"id":16,"category":{"id":1,"name":"boy"},"name":"Tom","photoUrls":["https://upload.wikimedia.org/wikipedia/commons/0/0c/Deutscher_Sch%C3%A4ferhund-_portrait.JPG"],"tags":[{"id":16,"name":"nemeckaya ovcharka"}],"status":"sold"},{"id":641,"category":{"id":74,"name":"research"},"name":"Jason Jordan","photoUrls":["https://placekitten.com/217/149"],"tags":[{"id":36,"name":"candidate"}],"status":"sold"},{"id":6176,"category":{"id":1121,"name":"yxWmLwlNVZ"},"name":"Nmjhhs1nuq","photoUrls":["H3LNcChtA6","47YVXqMXQa","XKlFvtxn1n","Na73N446lG","HOMU1kJ5A4"],"tags":[{"id":6719,"name":"urcHLcEf99"},{"id":6466,"name":"ZrL2qqnAdN"}],"status":"sold"},{"id":31,"category":{"id":69,"name":"fight"},"name":"Zachary Hill","photoUrls":["https://placekitten.com/810/852"],"tags":[{"id":78,"name":"more"}],"status":"sold"},{"id":254,"category":{"id":0,"name":"category c076irokfq"},"name":"cats oiwr8hqnwpn","photoUrls":["string"],"tags":[{"id":0,"name":"tag io33i9d0vtl"}],"status":"sold"},{"id":239,"category":{"id":0,"name":"category rma9i5yj1z"},"name":"cats 9sfdggw3cop","photoUrls":["string"],"tags":[{"id":0,"name":"tag bjkkm95pgyd"}],"status":"sold"},{"id":32323242323,"name":"cshaplin","photoUrls":[],"tags":[],"status":"sold"},{"id":56834567,"category":{"id":0,"name":"string"},"name":"Мурзик","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"},{"id":55325269,"category":{"id":86859456,"name":"aliqua consectetur tempor occaecat id"},"name":"doggie","photoUrls":["do Lorem reprehenderit","Duis et mollit voluptate"],"tags":[{"id":78709229,"name":"cupidatat in cillum ullamco tempor"},{"id":-92349321,"name":"enim cupidatat ad v"}],"status":"sold"},{"id":666,"name":"CyberDemon","photoUrls":[],"tags":[],"status":"sold"},{"id":443,"category":{"id":38,"name":"many"},"name":"Bryan Curry","photoUrls":["https://picsum.photos/676/970"],"tags":[{"id":94,"name":"of"}],"status":"sold"},{"id":967,"category":{"id":193,"name":"uptbox"},"name":"uptDaniel Thomas","tags":[{"id":196,"name":"uptpower"}],"status":"sold"},{"id":483,"category":{"id":137,"name":"uptcheck"},"name":"uptNicole Morgan","photoUrls":["https://picsum.photos/980/692/upt"],"tags":[{"id":159,"name":"uptnot"}],"status":"sold"},{"id":2205,"category":{"id":101,"name":"category2"},"name":"Tests","photoUrls":["def.com"],"tags":[{"id":20,"name":"Cat"}],"status":"sold"},{"id":2348606728,"category":{"id":501553982,"name":"dog"},"name":"hello kity","photoUrls":["http://foo.bar.com/1","http://foo.bar.com/2"],"tags":[{"id":828039055,"name":"blank"}],"status":"sold"},{"id":2423586365,"category":{"id":2094768224,"name":"dog"},"name":"hello kity","photoUrls":["http://foo.bar.com/1","http://foo.bar.com/2"],"tags":[{"id":2008013897,"name":"blank"}],"status":"sold"},{"id":4117945412,"category":{"id":1719187880,"name":"dog"},"name":"hello kity","photoUrls":["http://foo.bar.com/1","http://foo.bar.com/2"],"tags":[{"id":2327129732,"name":"blank"}],"status":"sold"},{"id":739213967,"category":{"id":4115842988,"name":"dog"},"name":"hello kity","photoUrls":["http://foo.bar.com/1","http://foo.bar.com/2"],"tags":[{"id":3790585430,"name":"blank"}],"status":"sold"},{"id":1976928844,"category":{"id":2034293177,"name":"dog"},"name":"hello kity","photoUrls":["http://foo.bar.com/1","http://foo.bar.com/2"],"tags":[{"id":3221514098,"name":"blank"}],"status":"sold"},{"id":1231,"category":{"id":1,"name":"zevs"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"},{"id":11231,"category":{"id":1,"name":"zevs"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"},{"id":121231,"category":{"id":1,"name":"zevs"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"},{"id":5683456,"category":{"id":0,"name":"string"},"name":"Мурзик","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"},{"id":20593238,"category":{"id":96650357,"name":"ut aute"},"name":"doggie","photoUrls":["in deserunt sit qui elit","do dolore"],"tags":[{"id":80489283,"name":"dolore elit aute Excepteur anim"},{"id":-29854588,"name":"enim"}],"status":"sold"},{"id":92582,"name":"bJpRwL2","photoUrls":["nI6kD8u","A33PenQ","lcj0JON","YFfeD9j","3s2Gq9j","LGhY2kI","XYqpem3","nm0LraU","bKo24QY","kEB26Fa","a41R5iP","VBx2sx7","5f12DBt","MK6Rzh9"],"tags":[],"status":"sold"},{"id":17,"name":"Special_char_owner_!@#$^&()`.testing","photoUrls":["https://petstore3.swagger.io/resources/photos/623389095.jpg"],"tags":[],"status":"sold"},{"id":19467,"name":"見響见响仮仏!$%&()*+,-ƄƅƆḞḟṀʶʷʸăĄą","photoUrls":["https://petstore3.swagger.io/resources/photos/623389095.jpg"],"tags":[],"status":"sold"},{"id":1234567,"category":{"id":35,"name":"caini"},"name":"Grivei update","photoUrls":[],"tags":[{"id":1,"name":"dalmatian"}],"status":"sold"},{"id":734255,"category":{"id":89110,"name":"vurSoSGp"},"name":"doggie","photoUrls":["NnuXzv"],"tags":[{"id":584156,"name":"zKKwcTrs"}],"status":"sold"},{"id":11133,"category":{"id":777,"name":"Грызун"},"name":"Георгий","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"},{"id":56331470,"category":{"id":28262311,"name":"nostrud proident"},"name":"doggie","photoUrls":["sunt dolor veniam aliqua","nulla anim ex"],"tags":[{"id":21515670,"name":"voluptate in elit ani"},{"id":-36858804,"name":"proident non deserunt"}],"status":"sold"},{"id":1010,"category":{"id":0,"name":"zevs"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"},{"id":24093935,"category":{"id":-6714225,"name":"do magna"},"name":"doggie","photoUrls":["aute","velit"],"tags":[{"id":71561130,"name":"deserunt ut occaecat"},{"id":-1195842,"name":"nulla nostrud occaeca"}],"status":"sold"},{"id":3708840,"category":{"id":9855812,"name":"Duis in commodo"},"name":"doggie","photoUrls":["minim id in sit","est esse culpa nisi"],"tags":[{"id":-89808508,"name":"sit"},{"id":-5238278,"name":"dolor in"}],"status":"sold"},{"id":91507602,"category":{"id":-95494262,"name":"sit ea"},"name":"doggie","photoUrls":["deserunt","id sint et"],"tags":[{"id":-54029842,"name":"ullamco"},{"id":13198949,"name":"id"}],"status":"sold"},{"id":3903023,"category":{"id":-56789506,"name":"cillum p"},"name":"doggie","photoUrls":["aliquip Excepteur","commodo dolore consequat eu"],"tags":[{"id":60937326,"name":"irure in"},{"id":20218536,"name":"sint consectetur ad voluptate"}],"status":"sold"},{"id":9,"category":{"id":0,"name":"cats"},"name":"King Kong","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"},{"id":873,"category":{"id":0,"name":"category pwbrmqp0v1"},"name":"cats htecdg1sjz","photoUrls":["string"],"tags":[{"id":0,"name":"tag bm6k6n3aql"}],"status":"sold"},{"id":960,"category":{"id":0,"name":"category pur26id1tj"},"name":"cats 40muhhhmk5q","photoUrls":["string"],"tags":[{"id":0,"name":"tag 6g8cyre688p"}],"status":"sold"},{"id":795,"category":{"id":0,"name":"category haduuhd6hjg"},"name":"cats t3813yxb6ub","photoUrls":["string"],"tags":[{"id":0,"name":"tag b7wje7aqv7i"}],"status":"sold"},{"id":620,"category":{"id":0,"name":"category h8oogtqykzm"},"name":"cats bj2hxecl2f","photoUrls":["string"],"tags":[{"id":0,"name":"tag o8bqdxnxfar"}],"status":"sold"},{"id":521,"category":{"id":0,"name":"category p62r4ty1xlc"},"name":"cats qs9t5a1eu4","photoUrls":["string"],"tags":[{"id":0,"name":"tag meengon2xl"}],"status":"sold"},{"id":402,"category":{"id":0,"name":"category ma5y58dporm"},"name":"cats 7sqzq9x0jf7","photoUrls":["string"],"tags":[{"id":0,"name":"tag kwf2vormqvb"}],"status":"sold"},{"id":6398536345953696969,"category":{"id":2,"name":"biba"},"name":"biba-boba","photoUrls":[],"tags":[],"status":"sold"},{"id":52931566,"category":{"id":91307171,"name":"sint aliqua"},"name":"doggie","photoUrls":["ut culpa null","quis"],"tags":[{"id":-40794559,"name":"velit proident nulla"},{"id":-14228534,"name":"ess"}],"status":"sold"},{"id":87705905,"category":{"id":22032096,"name":"reprehenderit in minim"},"name":"doggie","photoUrls":["cillum Ut ","et adipisicing consequat"],"tags":[{"id":-14103627,"name":"reprehenderit"},{"id":47181501,"name":"occaecat"}],"status":"sold"},{"id":38480305,"category":{"id":-59161747,"name":"Duis voluptate consequat"},"name":"doggie","photoUrls":["ex enim ","nisi est"],"tags":[{"id":49121599,"name":"non anim exercitation"},{"id":2672065,"name":"sint"}],"status":"sold"},{"id":2022000,"category":{"id":0,"name":"bird"},"name":"Star","photoUrls":["string"],"tags":[{"id":0,"name":"shy"}],"status":"sold"},{"id":60,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"},{"id":5644444,"category":{"id":566555,"name":"nulla minim laborum deserunt"},"name":"Собака","photoUrls":["anim ullamco laborum eu","eiusm"],"tags":[{"id":10156776,"name":"cillum adipisicing"},{"id":-53013483,"name":"sit Ut enim dolore"}],"status":"sold"},{"id":23437566,"category":{"id":-46393995,"name":"ex ea culpa"},"name":"doggie","photoUrls":["ut ex veniam dolor","in aliquip"],"tags":[{"id":91638732,"name":"Excepteur ea commodo esse"},{"id":42980181,"name":"nulla officia ut labore"}],"status":"sold"},{"id":62751340,"category":{"id":-37441254,"name":"aute cillum voluptate veniam"},"name":"doggie","photoUrls":["mollit veniam","dolor enim reprehenderit"],"tags":[{"id":91709679,"name":"anim adipisicing"},{"id":919209,"name":"sint anim"}],"status":"sold"},{"id":9223372036854773917,"category":{"id":0,"name":"string"},"name":"boss2.0","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"},{"id":79897977,"category":{"id":-43696612,"name":"exercitation"},"name":"doggie","photoUrls":["dolor","velit voluptate"],"tags":[{"id":59218385,"name":"aliqua"},{"id":72829050,"name":"nostrud ut"}],"status":"sold"},{"id":51338511,"category":{"id":43003430,"name":"ex ullamco"},"name":"doggie","photoUrls":["sit ipsum","nulla eu aliqua incididunt"],"tags":[{"id":1864541,"name":"anim elit amet"},{"id":98553871,"name":"ut"}],"status":"sold"},{"id":71551342,"category":{"id":14955550,"name":"ipsum do amet"},"name":"doggie","photoUrls":["dolore dolor","pariatur elit ea"],"tags":[{"id":-17398234,"name":"non ex"},{"id":-32010324,"name":"ut culpa aliqua est non"}],"status":"sold"},{"id":777123,"category":{"id":777123,"name":"fish"},"name":"Nemo","photoUrls":["https://img1.fonwall.ru/o/hl/sea-photography-flower-underwater.jpeg?route=mid&amp;h=750","https://img1.fonwall.ru/o/hl/sea-photography-flower-underwater.jpeg?route=mid&amp;h=750"],"tags":[{"id":123,"name":"priff"},{"id":123,"name":"ribka"}],"status":"sold"},{"id":33377689,"category":{"id":-5871190,"name":"in voluptate velit proident"},"name":"doggie","photoUrls":["amet in","aute in"],"tags":[{"id":-26593919,"name":"tempor eiusmod ipsum"},{"id":78722837,"name":"in sit ullamco aliqua qui"}],"status":"sold"},{"id":24364310,"category":{"id":-12307344,"name":"kitten бфрмалейка"},"name":"kitten1","photoUrls":["dolor in","occaecat dolore consectetur adipisicing"],"tags":[{"id":-22679152,"name":"non ex"},{"id":33284191,"name":"sed pariatur in"}],"status":"sold"},{"id":70119872,"category":{"id":93142102,"name":"Змея"},"name":"Анаконда","photoUrls":["mollit","https://irecommend.ru/sites/default/files/product-images/98227/3lJyZagay9aoxv06o6TJCQ.jpg"],"tags":[{"id":-19037377,"name":"deserunt veniam nulla reprehenderit"},{"id":51503358,"name":"ullamco aliqua Excepteur cillum"}],"status":"sold"},{"id":70119872000,"category":{"id":93142102,"name":"Заяц французский 2"},"name":"LAPIN LAPIN","photoUrls":["mollit","https://irecommend.ru/sites/default/files/product-images/98227/3lJyZagay9aoxv06o6TJCQ.jpg"],"tags":[{"id":-19037377,"name":"deserunt veniam nulla reprehenderit"},{"id":51503358,"name":"ullamco aliqua Excepteur cillum"}],"status":"sold"}]
+22:27:00.970 [pool-1-thread-2] INFO  com.intuit.karate - [print] [
+  {
+    "petId": 118,
+    "petName": "rnn"
+  },
+  {
+    "petId": 109,
+    "petName": "imr"
+  },
+  {
+    "petId": 127,
+    "petName": "8bq"
+  },
+  {
+    "petId": 7574746,
+    "petName": "Hardy"
+  },
+  {
+    "petId": 3146,
+    "petName": "Gigi791"
+  },
+  {
+    "petId": 4187,
+    "petName": "Gigi620"
+  },
+  {
+    "petId": 108,
+    "petName": "b96"
+  },
+  {
+    "petId": 9223372016900063838,
+    "petName": "Luna"
+  },
+  {
+    "petId": 50907655,
+    "petName": "catmy"
+  },
+  {
+    "petId": 136,
+    "petName": "gb4"
+  },
+  {
+    "petId": 153,
+    "petName": "2ac"
+  },
+  {
+    "petId": 172,
+    "petName": "Joshua Weaver"
+  },
+  {
+    "petId": 148,
+    "petName": "t6o"
+  },
+  {
+    "petId": 175,
+    "petName": "2zf"
+  },
+  {
+    "petId": 185,
+    "petName": "e6f"
+  },
+  {
+    "petId": 120,
+    "petName": "hyz"
+  },
+  {
+    "petId": 166,
+    "petName": "ewm"
+  },
+  {
+    "petId": 176,
+    "petName": "9m4"
+  },
+  {
+    "petId": 191,
+    "petName": "cats 5m75h30iz08"
+  },
+  {
+    "petId": 149,
+    "petName": "ytg"
+  },
+  {
+    "petId": 189,
+    "petName": "nvv"
+  },
+  {
+    "petId": 198,
+    "petName": "cats k6043j4tvnl"
+  },
+  {
+    "petId": 114,
+    "petName": "kfj"
+  },
+  {
+    "petId": 168,
+    "petName": "cats zojd46460m"
+  },
+  {
+    "petId": 692,
+    "petName": "Alessia"
+  },
+  {
+    "petId": 627,
+    "petName": "Jose"
+  },
+  {
+    "petId": 13,
+    "petName": null
+  },
+  {
+    "petId": 751,
+    "petName": "Diana Benson"
+  },
+  {
+    "petId": 216,
+    "petName": "Theresa Ford"
+  },
+  {
+    "petId": 303,
+    "petName": "Busya"
+  },
+  {
+    "petId": 16,
+    "petName": "Tom"
+  },
+  {
+    "petId": 641,
+    "petName": "Jason Jordan"
+  },
+  {
+    "petId": 6176,
+    "petName": "Nmjhhs1nuq"
+  },
+  {
+    "petId": 31,
+    "petName": "Zachary Hill"
+  },
+  {
+    "petId": 254,
+    "petName": "cats oiwr8hqnwpn"
+  },
+  {
+    "petId": 239,
+    "petName": "cats 9sfdggw3cop"
+  },
+  {
+    "petId": 32323242323,
+    "petName": "cshaplin"
+  },
+  {
+    "petId": 56834567,
+    "petName": "Мурзик"
+  },
+  {
+    "petId": 55325269,
+    "petName": "doggie"
+  },
+  {
+    "petId": 666,
+    "petName": "CyberDemon"
+  },
+  {
+    "petId": 443,
+    "petName": "Bryan Curry"
+  },
+  {
+    "petId": 967,
+    "petName": "uptDaniel Thomas"
+  },
+  {
+    "petId": 483,
+    "petName": "uptNicole Morgan"
+  },
+  {
+    "petId": 2205,
+    "petName": "Tests"
+  },
+  {
+    "petId": 2348606728,
+    "petName": "hello kity"
+  },
+  {
+    "petId": 2423586365,
+    "petName": "hello kity"
+  },
+  {
+    "petId": 4117945412,
+    "petName": "hello kity"
+  },
+  {
+    "petId": 739213967,
+    "petName": "hello kity"
+  },
+  {
+    "petId": 1976928844,
+    "petName": "hello kity"
+  },
+  {
+    "petId": 1231,
+    "petName": "doggie"
+  },
+  {
+    "petId": 11231,
+    "petName": "doggie"
+  },
+  {
+    "petId": 121231,
+    "petName": "doggie"
+  },
+  {
+    "petId": 5683456,
+    "petName": "Мурзик"
+  },
+  {
+    "petId": 20593238,
+    "petName": "doggie"
+  },
+  {
+    "petId": 92582,
+    "petName": "bJpRwL2"
+  },
+  {
+    "petId": 17,
+    "petName": "Special_char_owner_!@#$^&()`.testing"
+  },
+  {
+    "petId": 19467,
+    "petName": "見響见响仮仏!$%&()*+,-ƄƅƆḞḟṀʶʷʸăĄą"
+  },
+  {
+    "petId": 1234567,
+    "petName": "Grivei update"
+  },
+  {
+    "petId": 734255,
+    "petName": "doggie"
+  },
+  {
+    "petId": 11133,
+    "petName": "Георгий"
+  },
+  {
+    "petId": 56331470,
+    "petName": "doggie"
+  },
+  {
+    "petId": 1010,
+    "petName": "doggie"
+  },
+  {
+    "petId": 24093935,
+    "petName": "doggie"
+  },
+  {
+    "petId": 3708840,
+    "petName": "doggie"
+  },
+  {
+    "petId": 91507602,
+    "petName": "doggie"
+  },
+  {
+    "petId": 3903023,
+    "petName": "doggie"
+  },
+  {
+    "petId": 9,
+    "petName": "King Kong"
+  },
+  {
+    "petId": 873,
+    "petName": "cats htecdg1sjz"
+  },
+  {
+    "petId": 960,
+    "petName": "cats 40muhhhmk5q"
+  },
+  {
+    "petId": 795,
+    "petName": "cats t3813yxb6ub"
+  },
+  {
+    "petId": 620,
+    "petName": "cats bj2hxecl2f"
+  },
+  {
+    "petId": 521,
+    "petName": "cats qs9t5a1eu4"
+  },
+  {
+    "petId": 402,
+    "petName": "cats 7sqzq9x0jf7"
+  },
+  {
+    "petId": 6398536345953696969,
+    "petName": "biba-boba"
+  },
+  {
+    "petId": 52931566,
+    "petName": "doggie"
+  },
+  {
+    "petId": 87705905,
+    "petName": "doggie"
+  },
+  {
+    "petId": 38480305,
+    "petName": "doggie"
+  },
+  {
+    "petId": 2022000,
+    "petName": "Star"
+  },
+  {
+    "petId": 60,
+    "petName": "doggie"
+  },
+  {
+    "petId": 5644444,
+    "petName": "Собака"
+  },
+  {
+    "petId": 23437566,
+    "petName": "doggie"
+  },
+  {
+    "petId": 62751340,
+    "petName": "doggie"
+  },
+  {
+    "petId": 9223372036854773917,
+    "petName": "boss2.0"
+  },
+  {
+    "petId": 79897977,
+    "petName": "doggie"
+  },
+  {
+    "petId": 51338511,
+    "petName": "doggie"
+  },
+  {
+    "petId": 71551342,
+    "petName": "doggie"
+  },
+  {
+    "petId": 777123,
+    "petName": "Nemo"
+  },
+  {
+    "petId": 33377689,
+    "petName": "doggie"
+  },
+  {
+    "petId": 24364310,
+    "petName": "kitten1"
+  },
+  {
+    "petId": 70119872,
+    "petName": "Анаконда"
+  },
+  {
+    "petId": 70119872000,
+    "petName": "LAPIN LAPIN"
+  }
+]
+ 
+22:27:00.992 [pool-1-thread-2] INFO  com.intuit.karate - [print] {
+  "[object Object]": 91
+}
+ 
+22:27:01.010 [pool-1-thread-2] INFO  com.intuit.karate - [print] [
+  {
+    "petId": 118,
+    "petName": "rnn"
+  },
+  {
+    "petId": 109,
+    "petName": "imr"
+  },
+  {
+    "petId": 127,
+    "petName": "8bq"
+  },
+  {
+    "petId": 7574746,
+    "petName": "Hardy"
+  },
+  {
+    "petId": 3146,
+    "petName": "Gigi791"
+  },
+  {
+    "petId": 4187,
+    "petName": "Gigi620"
+  },
+  {
+    "petId": 108,
+    "petName": "b96"
+  },
+  {
+    "petId": 9223372016900063838,
+    "petName": "Luna"
+  },
+  {
+    "petId": 50907655,
+    "petName": "catmy"
+  },
+  {
+    "petId": 136,
+    "petName": "gb4"
+  },
+  {
+    "petId": 153,
+    "petName": "2ac"
+  },
+  {
+    "petId": 172,
+    "petName": "Joshua Weaver"
+  },
+  {
+    "petId": 148,
+    "petName": "t6o"
+  },
+  {
+    "petId": 175,
+    "petName": "2zf"
+  },
+  {
+    "petId": 185,
+    "petName": "e6f"
+  },
+  {
+    "petId": 120,
+    "petName": "hyz"
+  },
+  {
+    "petId": 166,
+    "petName": "ewm"
+  },
+  {
+    "petId": 176,
+    "petName": "9m4"
+  },
+  {
+    "petId": 191,
+    "petName": "cats 5m75h30iz08"
+  },
+  {
+    "petId": 149,
+    "petName": "ytg"
+  },
+  {
+    "petId": 189,
+    "petName": "nvv"
+  },
+  {
+    "petId": 198,
+    "petName": "cats k6043j4tvnl"
+  },
+  {
+    "petId": 114,
+    "petName": "kfj"
+  },
+  {
+    "petId": 168,
+    "petName": "cats zojd46460m"
+  },
+  {
+    "petId": 692,
+    "petName": "Alessia"
+  },
+  {
+    "petId": 627,
+    "petName": "Jose"
+  },
+  {
+    "petId": 13,
+    "petName": null
+  },
+  {
+    "petId": 751,
+    "petName": "Diana Benson"
+  },
+  {
+    "petId": 216,
+    "petName": "Theresa Ford"
+  },
+  {
+    "petId": 303,
+    "petName": "Busya"
+  },
+  {
+    "petId": 16,
+    "petName": "Tom"
+  },
+  {
+    "petId": 641,
+    "petName": "Jason Jordan"
+  },
+  {
+    "petId": 6176,
+    "petName": "Nmjhhs1nuq"
+  },
+  {
+    "petId": 31,
+    "petName": "Zachary Hill"
+  },
+  {
+    "petId": 254,
+    "petName": "cats oiwr8hqnwpn"
+  },
+  {
+    "petId": 239,
+    "petName": "cats 9sfdggw3cop"
+  },
+  {
+    "petId": 32323242323,
+    "petName": "cshaplin"
+  },
+  {
+    "petId": 56834567,
+    "petName": "Мурзик"
+  },
+  {
+    "petId": 55325269,
+    "petName": "doggie"
+  },
+  {
+    "petId": 666,
+    "petName": "CyberDemon"
+  },
+  {
+    "petId": 443,
+    "petName": "Bryan Curry"
+  },
+  {
+    "petId": 967,
+    "petName": "uptDaniel Thomas"
+  },
+  {
+    "petId": 483,
+    "petName": "uptNicole Morgan"
+  },
+  {
+    "petId": 2205,
+    "petName": "Tests"
+  },
+  {
+    "petId": 2348606728,
+    "petName": "hello kity"
+  },
+  {
+    "petId": 2423586365,
+    "petName": "hello kity"
+  },
+  {
+    "petId": 4117945412,
+    "petName": "hello kity"
+  },
+  {
+    "petId": 739213967,
+    "petName": "hello kity"
+  },
+  {
+    "petId": 1976928844,
+    "petName": "hello kity"
+  },
+  {
+    "petId": 1231,
+    "petName": "doggie"
+  },
+  {
+    "petId": 11231,
+    "petName": "doggie"
+  },
+  {
+    "petId": 121231,
+    "petName": "doggie"
+  },
+  {
+    "petId": 5683456,
+    "petName": "Мурзик"
+  },
+  {
+    "petId": 20593238,
+    "petName": "doggie"
+  },
+  {
+    "petId": 92582,
+    "petName": "bJpRwL2"
+  },
+  {
+    "petId": 17,
+    "petName": "Special_char_owner_!@#$^&()`.testing"
+  },
+  {
+    "petId": 19467,
+    "petName": "見響见响仮仏!$%&()*+,-ƄƅƆḞḟṀʶʷʸăĄą"
+  },
+  {
+    "petId": 1234567,
+    "petName": "Grivei update"
+  },
+  {
+    "petId": 734255,
+    "petName": "doggie"
+  },
+  {
+    "petId": 11133,
+    "petName": "Георгий"
+  },
+  {
+    "petId": 56331470,
+    "petName": "doggie"
+  },
+  {
+    "petId": 1010,
+    "petName": "doggie"
+  },
+  {
+    "petId": 24093935,
+    "petName": "doggie"
+  },
+  {
+    "petId": 3708840,
+    "petName": "doggie"
+  },
+  {
+    "petId": 91507602,
+    "petName": "doggie"
+  },
+  {
+    "petId": 3903023,
+    "petName": "doggie"
+  },
+  {
+    "petId": 9,
+    "petName": "King Kong"
+  },
+  {
+    "petId": 873,
+    "petName": "cats htecdg1sjz"
+  },
+  {
+    "petId": 960,
+    "petName": "cats 40muhhhmk5q"
+  },
+  {
+    "petId": 795,
+    "petName": "cats t3813yxb6ub"
+  },
+  {
+    "petId": 620,
+    "petName": "cats bj2hxecl2f"
+  },
+  {
+    "petId": 521,
+    "petName": "cats qs9t5a1eu4"
+  },
+  {
+    "petId": 402,
+    "petName": "cats 7sqzq9x0jf7"
+  },
+  {
+    "petId": 6398536345953696969,
+    "petName": "biba-boba"
+  },
+  {
+    "petId": 52931566,
+    "petName": "doggie"
+  },
+  {
+    "petId": 87705905,
+    "petName": "doggie"
+  },
+  {
+    "petId": 38480305,
+    "petName": "doggie"
+  },
+  {
+    "petId": 2022000,
+    "petName": "Star"
+  },
+  {
+    "petId": 60,
+    "petName": "doggie"
+  },
+  {
+    "petId": 5644444,
+    "petName": "Собака"
+  },
+  {
+    "petId": 23437566,
+    "petName": "doggie"
+  },
+  {
+    "petId": 62751340,
+    "petName": "doggie"
+  },
+  {
+    "petId": 9223372036854773917,
+    "petName": "boss2.0"
+  },
+  {
+    "petId": 79897977,
+    "petName": "doggie"
+  },
+  {
+    "petId": 51338511,
+    "petName": "doggie"
+  },
+  {
+    "petId": 71551342,
+    "petName": "doggie"
+  },
+  {
+    "petId": 777123,
+    "petName": "Nemo"
+  },
+  {
+    "petId": 33377689,
+    "petName": "doggie"
+  },
+  {
+    "petId": 24364310,
+    "petName": "kitten1"
+  },
+  {
+    "petId": 70119872,
+    "petName": "Анаконда"
+  },
+  {
+    "petId": 70119872000,
+    "petName": "LAPIN LAPIN"
+  }
+]
+ 
+22:27:01.025 [pool-1-thread-2] INFO  com.intuit.karate - [print] {
+  "[object Object]": 91
+}
+ 
+22:27:01.127 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 319
+2 < 200
+2 < Date: Thu, 20 Feb 2025 21:27:00 GMT
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < Access-Control-Allow-Origin: *
+2 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+2 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+2 < Server: Jetty(9.2.9.v20150224)
+{"id":4,"username":"JD24","firstName":"Jesús","lastName":"Muñoz","email":"mai@mail.com","password":"pass1234","phone":"123456789","userStatus":0}
+22:27:01.128 [pool-1-thread-1] INFO  com.intuit.karate - [print] {
+  "id": 4,
+  "username": "JD24",
+  "firstName": "Jesús",
+  "lastName": "Muñoz",
+  "email": "mai@mail.com",
+  "password": "pass1234",
+  "phone": "123456789",
+  "userStatus": 0
+}
+ 
+22:27:01.696 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:apisTest/feature/Test.feature
