@@ -22,7 +22,7 @@ Feature:
     Given path 'v2', 'user', variables[0].userName
     When method get
     Then print response 
-    And assert response.username == variables[0].userName
+    And match response.username == variables[0].userName
 
     @FindByStatus
     Scenario: Find by status and count names
