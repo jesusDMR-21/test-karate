@@ -38,4 +38,4 @@ Feature:
       * def recovered2 = jsFunClass.modifiedResponse(response)
       Then print recovered2
       * def expected2 = jsFunClass.nameRepetitions(recovered2)
-      Then print expected
+      Then print expected2
