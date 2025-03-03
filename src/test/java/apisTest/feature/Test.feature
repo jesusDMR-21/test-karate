@@ -9,7 +9,7 @@ Feature:
   Scenario: Create and get user
     * table variables
       |id   |userName   |firstName  |lastName   |email          |pass       |phone      |userStatus |
-      |4    |'JD24'     |'Jesús'    |'Muñoz'    |'mai@mail.com' |'pass1234' |'123456789'|0          |
+      |4    |'JD24'     |'Jesus'    |'Munoz'    |'mai@mail.com' |'pass1234' |'123456789'|0          |
     * def rqst = read('classpath:resources/json/createAccount.json')
     * print rqst
     ##Creating user
